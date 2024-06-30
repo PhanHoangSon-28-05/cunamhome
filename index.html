@@ -17,23 +17,76 @@
     <script src="style/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
     <script src="style/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 
+    <link rel="stylesheet" href="style/slider/line/line.css">
+    <link rel="stylesheet" href="style/slider/product/product.css">
+
     <link rel="stylesheet" href="style/css/slider.css">
 
 </head>
 
-<body class="overlay-container">
+<body>
     <header id="header" class="header">
-        <nav class="navbar navbar-expand-lg bg-light p-0">
-            <div class="container-fluid">
-                <!-- Logo -->
-                <a class="navbar-brand logo" href="#"><img src="images/Logo-1.png" alt=""></a>
-                <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
+        <div class="bg-dark line p-0 m-0">
+            <div class="row align-items-start">
+                <div class="col-4">
+                    <div class="row ms-1">
+                        <div class="button p-0 d-none d-md-block">
+                            <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
+                            <i class="fa-solid fa-chevron-right text-white" onclick="nextSlideLine()"></i>
+                        </div>
+                        <div class="button p-0 col-md-1 d-md-none">
+                            <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
+                        </div>
+                        <div id="slideshowLine" class="col-md-10">
+                            <a class="item text-white active" href="#">Navbar</a>
+                            <a class="item text-white" href="#">ss1</a>
+                            <a class="item text-white" href="#">ss2</a>
+                            <a class="item text-white" href="#">ss3</a>
+                            <a class="item text-white" href="#">ss4</a>
+                            <a class="item text-white" href="#">ss5</a>
+                        </div>
+                        <div class="button p-0 col-md-1 d-md-none">
+                            <i class="fa-solid fa-chevron-right text-white" onclick="nextSlideLine()"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 list d-none d-md-block">
+                    <ul class="list-unstyled d-inline-block float-end mx-3">
+                        <li class="d-inline-block">
+                            <a class="item text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a class="item text-white" href="#">Link</a>
+                        </li>
+                        <li class="dropdown d-inline-block">
+                            <a class="dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-inline-block">
+                            <a class="item text-white">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light p-0 menu">
+            <div class="container-fluid text-uppercase fw-bolder">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Logo -->
+                <a class="navbar-brand logo me-auto" href="#"><img src="style/images/Logo-1.png" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -132,38 +185,41 @@
     </header>
 
     <main id="content-wrapper" class="main-v2">
-        <section>
-            <div class="products">
+        <section class="mt-1 products">
+            <div>
                 <h2 class="text-center">Products</h2>
                 <div class="content-product text-center mt-2">
                     <div class="row align-items-start">
-                        <div class="col-lg-4 col-sm-12 p-1 product">
-                            <img src="images/Horizontal Sheer/4-27.jpg" class="img-product" alt="...">
+                        <div class="col-lg-3 col-sm-3 p-1 product">
+                            <img src="style/images/Horizontal Sheer/4-27.jpg" class="img-product" alt="...">
                             <p>Horizontal Sheer</p>
                         </div>
-                        <div class="col-lg-4 col-sm-12 p-1 product">
-                            <img src="images/p-1.jpg" class="img-product" alt="...">
+                        <div class="col-lg-3 col-sm-3 p-1 product">
+                            <img src="style/images/Horizontal Sheer/2-73.jpg" class="img-product" alt="...">
                             <p>Vertical Sheer</p>
                         </div>
-                        <div class="col-lg-4 col-sm-12 p-1 product">
-                            <img src="images/Roman shade/IMG_3657.jpg" class="img-product" alt="...">
+                        <div class="col-lg-3 col-sm-3 p-1 product">
+                            <img src="style/images/Roman shade/IMG_3657.jpg" class="img-product" alt="...">
                             <p>Roman Shade</p>
                         </div>
-                    </div>
-                    <div class="row align-items-center mt-2">
-                        <div class="col-lg-4 col-sm-12 p-1 product">
-                            <img src="images/p-1.jpg" class="img-product" alt="...">
+                        <div class="col-lg-3 col-sm-3 p-1 product">
+                            <img src="style/images/Horizontal Sheer/3-7.jpg" class="img-product" alt="...">
                             <p>Cellular Shades</p>
                         </div>
-                        <div class="col-lg-4 col-sm-12 p-1 product">
-                            <img src="images/p-1.jpg" class="img-product" alt="...">
+                        <div class="col-lg-3 col-sm-3 p-1 product">
+                            <img src="style/images/Horizontal Sheer/5-24.jpg" class="img-product" alt="...">
                             <p>Combi</p>
                         </div>
-                        <div class="col-lg-4 col-sm-12 p-1 product">
-                            <img src="images/p-1.jpg" class="img-product" alt="...">
+                        <div class="col-lg-3 col-sm-3 p-1 product">
+                            <img src="style/images/Horizontal Sheer/3A1FFE68-31FC-4592-B76F-3E96B4ABBA3A_1_105_c.jpeg" class="img-product" alt="...">
                             <p>Zipscreen</p>
                         </div>
                     </div>
+                </div>
+                <div class="button p-0 text-center mt-3">
+                    <i class="fa-solid fa-chevron-left" onclick="prevSlideProduct()"></i>
+                    <span id="dots"></span>
+                    <i class="fa-solid fa-chevron-right" onclick="nextSlideProduct()"></i>
                 </div>
             </div>
         </section>
@@ -173,29 +229,29 @@
                 <div class="content-category text-center mt-2">
                     <div class="row align-items-start">
                         <div class="col-lg-4 col-sm-12 p-1 category">
-                            <img src="images/p-1.jpg" class="img-category" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-category" alt="...">
                             <p>Motorization</p>
                         </div>
                         <div class="col-lg-4 col-sm-12 p-1 category">
-                            <img src="images/p-1.jpg" class="img-category" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-category" alt="...">
                             <p>Energy Efficient</p>
                         </div>
                         <div class="col-lg-4 col-sm-12 p-1 category">
-                            <img src="images/p-1.jpg" class="img-category" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-category" alt="...">
                             <p>Light/soft</p>
                         </div>
                     </div>
                     <div class="row align-items-center mt-2">
                         <div class="col-lg-4 col-sm-12 p-1 category">
-                            <img src="images/p-1.jpg" class="img-category" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-category" alt="...">
                             <p>Black Out</p>
                         </div>
                         <div class="col-lg-4 col-sm-12 p-1 category">
-                            <img src="images/p-1.jpg" class="img-category" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-category" alt="...">
                             <p>Indoor Covering</p>
                         </div>
                         <div class="col-lg-4 col-sm-12 p-1 category">
-                            <img src="images/p-1.jpg" class="img-category" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-category" alt="...">
                             <p>Outdoor Covering</p>
                         </div>
                     </div>
@@ -208,19 +264,19 @@
                 <div class="content-proces text-center mt-2">
                     <div class="row align-items-start">
                         <div class="col-lg-3 col-sm-12 p-1 proces">
-                            <img src="images/p-1.jpg" class="img-proces" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-proces" alt="...">
                             <p>Consultation</p>
                         </div>
                         <div class="col-lg-3 col-sm-12 p-1 proces">
-                            <img src="images/p-1.jpg" class="img-proces" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-proces" alt="...">
                             <p>Quote</p>
                         </div>
                         <div class="col-lg-3 col-sm-12 p-1 proces">
-                            <img src="images/p-1.jpg" class="img-proces" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-proces" alt="...">
                             <p>LInstallation</p>
                         </div>
                         <div class="col-lg-3 col-sm-12 p-1 proces">
-                            <img src="images/p-1.jpg" class="img-proces" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-proces" alt="...">
                             <p>Follow up & Warranty</p>
                         </div>
                     </div>
@@ -233,15 +289,15 @@
                 <div class="content-testimonial text-center mt-2">
                     <div class="row align-items-start">
                         <div class="col-lg-4 col-sm-12 p-1 testimonial">
-                            <img src="images/p-1.jpg" class="img-testimonial" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-testimonial" alt="...">
                             <p>Rivew 1</p>
                         </div>
                         <div class="col-lg-4 col-sm-12 p-1 testimonial">
-                            <img src="images/p-1.jpg" class="img-testimonial" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-testimonial" alt="...">
                             <p>Rivew 2</p>
                         </div>
                         <div class="col-lg-4 col-sm-12 p-1 testimonial">
-                            <img src="images/p-1.jpg" class="img-testimonial" alt="...">
+                            <img src="style/images/p-1.jpg" class="img-testimonial" alt="...">
                             <p>Rivew 3</p>
                         </div>
                     </div>
@@ -257,6 +313,9 @@
 
     <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="style/js/slider.js"></script>
+    <script src="style/slider/line/line.js"></script>
+    <script src="style/slider/product/product.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,101 @@
+.products {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 6);
+    /* 6 items */
+}
+
+.product-slide {
+    display: flex;
+    width: calc(100% / 6);
+    /* Adjust this to the number of items */
+}
+
+.product {
+    min-width: 25%;
+    /* Show 4 items at a time */
+    flex: 0 0 25%;
+    box-sizing: border-box;
+}
+
+.products .button {
+    margin-top: 10px;
+}
+
+.products .button i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#dots {
+    pointer-events: none;
+}
+
+.products .dot {
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    border-radius: 20%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.products .dot.active {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .product {
+        min-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-slider {
+        flex-wrap: nowrap;
+    }
+
+    .product-slide {
+        flex: 0 0 50%;
+    }
+
+    #content-wrapper .content-product .img-product {
+        height: 100px;
+    }
+
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product-slider {
+        flex-wrap: nowrap;
+    }
+
+    .product-slide {
+        flex: 0 0 33.3333%;
+        /* Hiển thị 3 phần tử tại một thời điểm trên máy tính bảng */
+    }
+
+    #content-wrapper .content-product .img-product {
+        height: 300px;
+    }
+
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+    }
+}

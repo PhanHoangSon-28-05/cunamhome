@@ -47,7 +47,7 @@ html {
     }
 
     .slick-dots {
-        position: fixed;
+        position: absolute;
         z-index: 100;
         width: 40px;
         height: auto;
