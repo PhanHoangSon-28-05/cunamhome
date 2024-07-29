@@ -22,6 +22,7 @@ body {
 
 #header .line {
     height: 23px;
+    background-color: black;
 }
 
 #header div.line .col-4 div.button {
@@ -62,7 +63,7 @@ body {
     #header div.line .col-4 #slideshowLine {
         text-align: center;
     }
-    
+
     #header div.line .col-4 .button i {
         width: 100%;
     }
@@ -92,8 +93,54 @@ body {
     font-weight: bold;
 }
 
-/* Product */
+/* Introduce */
 
+#introduction-section {
+    background-color: #e0d8cf;
+    padding: 40px 20px;
+}
+
+#introduction-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#introduction-section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+#introduction-section button {
+    background-color: #9a8978;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+#introduction-section button:hover {
+    background-color: #816
+}
+
+#introduction-section .image-right{
+    width: 345px;
+}
+
+#introduction-section .image-bottom {
+    margin-top: -80px;
+}
+
+@media (max-width: 767px) {
+
+    #introduction-section .image-right .w-50{
+        width: 200px;
+    }
+}
+
+/* End Introduce */
+
+/* Product */
 .products {
     .container-product {
         margin: 0 auto;
@@ -128,6 +175,10 @@ body {
         background-color: #ddd;
     }
 
+    .card img {
+        height: 500px;
+    }
+
     .card-price {
         font-size: 1.2rem;
         color: red;
@@ -151,6 +202,11 @@ body {
         margin: 0 5px;
     }
 
+    @media (max-width: 1023px) {
+        .card img {
+            height: 200px;
+        }
+    }
 
     @media (max-width: 767px) {
         .badge-discount {
@@ -160,6 +216,10 @@ body {
         .container-product .px-5 {
             padding-right: 0px;
             padding-left: 0px;
+        }
+
+        .card img {
+            height: 300px;
         }
     }
 }
@@ -181,6 +241,10 @@ body {
 
     .step-column {
         margin: 0 3px;
+    }
+
+    .step-row {
+        justify-content: center;
     }
 
     .card p {
