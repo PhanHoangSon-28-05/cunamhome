@@ -5,8 +5,9 @@
 }
 
 body {
-    overflow-x: hidden;
-    background-image: url('images/Drapery/7EBBE5C9-5D75-4B53-828F-BDDCE578DB52.jpg');
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -73,31 +74,6 @@ body {
     }
 }
 
-section.products {
-    background: rgb(244, 243, 237);
-    padding: 20px 0;
-}
-
-.slider-container {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-}
-
-.slideshow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-#content-wrapper .content-product .img-product {
-    width: 100%;
-    height: 400px;
-}
-
 #content-wrapper .content-category .img-category,
 #content-wrapper .content-proces .img-proces,
 #content-wrapper .content-testimonial .img-testimonial {
@@ -105,7 +81,6 @@ section.products {
     height: 200px;
 }
 
-#content-wrapper .content-product .product:hover,
 #content-wrapper .content-category .category:hover,
 #content-wrapper .content-proces .proces:hover,
 #content-wrapper .content-testimonial .testimonial:hover {
@@ -113,9 +88,87 @@ section.products {
     text-align: center;
 }
 
-#content-wrapper .content-product p,
 #content-wrapper .content-category p,
 #content-wrapper .content-proces p,
 #content-wrapper .content-testimonial p {
+    font-weight: bold;
+}
+
+/* Product */
+.products .container-product {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.products h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products p {
+    margin-bottom: 30px;
+}
+
+.products .shop-now {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.products .shop-now a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.products .shop-now a:hover {
+    background-color: #ddd;
+}
+
+.products .card-price {
+    font-size: 1.2rem;
+    color: red;
+}
+
+.products .card-old-price {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.products .badge-discount {
+    background-color: orange;
+    color: white;
+}
+
+.products .color-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* End Product */
+
+.step-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.step-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.step-column {
+    margin: 0 3px;
+}
+
+.step-row {
+    justify-content: center;
     font-weight: bold;
 }
