@@ -31,10 +31,10 @@
                             <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
                             <i class="fa-solid fa-chevron-right text-white" onclick="nextSlideLine()"></i>
                         </div>
-                        <div class="button p-0 col-md-1 d-md-none">
+                        <div class="button px-0 col-1 d-md-none">
                             <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
                         </div>
-                        <div id="slideshowLine" class="col-md-10">
+                        <div id="slideshowLine" class="col-md-10 col-10">
                             <a class="item text-white active" href="#">Navbar</a>
                             <a class="item text-white" href="#">ss1</a>
                             <a class="item text-white" href="#">ss2</a>
@@ -42,7 +42,8 @@
                             <a class="item text-white" href="#">ss4</a>
                             <a class="item text-white" href="#">ss5</a>
                         </div>
-                        <div class="button p-0 col-md-1 d-md-none">
+
+                        <div class="button ms-3 ps-1 col-1 d-md-none ">
                             <i class="fa-solid fa-chevron-right text-white" onclick="nextSlideLine()"></i>
                         </div>
                     </div>
@@ -155,19 +156,23 @@
     </header>
 
     <main id="content-wrapper" class="main-v2">
-        <section class="container my-5 products">
+        <section class="container-fluid my-5 products">
             <div class="container-product">
-                <h1>OUR PREMIER PRODUCTS</h1>
-                <p>We use only the ﬁnest fabrics from Europe, Turkey and Korea ensuring exceptional quality and style.
-                    Our expert craftsmen ensure perfectly ﬁt and attention to detail, creating window coverings that not
-                    only elevate your home’s style but also stand the test of time
-                </p>
-                <div class="shop-now">
-                    <a href="#">SHOP NOW</a>
+                <div class="px-md-5 px-sm-0">
+                    <h1 class="text-center text-uppercase">OUR PREMIER PRODUCTS</h1>
+                    <p class="text-center">We use only the ﬁnest fabrics from Europe, Turkey and Korea ensuring
+                        exceptional
+                        quality and style.
+                        Our expert craftsmen ensure perfectly ﬁt and attention to detail, creating window coverings that
+                        not
+                        only elevate your home’s style but also stand the test of time
+                    </p>
+                    <div class="shop-now">
+                        <a href="#">SHOP NOW</a>
+                    </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-6 my-1">
                         <div class="card">
                             <img src="style/images/p-1.jpg" class="card-img-top" alt="Oakley">
                             <div class="card-body">
@@ -185,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-6 my-1">
                         <div class="card">
                             <img src="style/images/p-1.jpg" class="card-img-top" alt="Oakley">
                             <div class="card-body">
@@ -203,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-6 my-1">
                         <div class="card">
                             <img src="style/images/p-1.jpg" class="card-img-top" alt="Oakley">
                             <div class="card-body">
@@ -221,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-6 my-1">
                         <div class="card">
                             <img src="style/images/p-1.jpg" class="card-img-top" alt="Oakley">
                             <div class="card-body">
@@ -302,28 +307,39 @@
                 </div>
             </div>
         </section> -->
-        <section class="container text-center my-5 process-work">
-            <div class="row step-row">
-                <div class="col-md-3 shadow mb-5 bg-body rounded step-column">
-                    <img src="style/images/p-1.jpg" alt="Measure" class="step-icon">
-                    <h5 class="step-title">Step 1</h5>
-                    <h6>Measure</h6>
-                    <p>Use our <a href="#" class="text-decoration-none">guides</a> to ensure you measure from the right
-                        places</p>
+        <section class="container-fluid text-center my-5 process-work">
+            <div class="px-5">
+                <h1 class="text-center text-uppercase">process work</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded step-column">
+                        <img src="style/images/p-1.jpg" alt="Measure" class="step-icon rounded mx-auto d-block">
+                        <h5 class="step-title">Step 1</h5>
+                        <h6>Measure</h6>
+                        <p>Use our <a href="#" class="text-decoration-none">guides</a> to ensure you measure from the
+                            right
+                            places</p>
+                    </div>
                 </div>
-                <div class="col-md-3 shadow mb-5 bg-body rounded step-column">
-                    <img src="style/images/p-1.jpg" alt="Order" class="step-icon">
-                    <h5 class="step-title">Step 2</h5>
-                    <h6>Order</h6>
-                    <p>Jump back online & create your customised order, shipped to you for <strong>just $30!</strong>
-                    </p>
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded step-column">
+                        <img src="style/images/p-1.jpg" alt="Order" class="step-icon rounded mx-auto d-block">
+                        <h5 class="step-title">Step 2</h5>
+                        <h6>Order</h6>
+                        <p>Jump back online & create your customised order, shipped to you for <strong>just
+                                $30!</strong>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-3 shadow mb-5 bg-body rounded step-column">
-                    <img src="style/images/p-1.jpg" alt="Install" class="step-icon">
-                    <h5 class="step-title">Step 3</h5>
-                    <h6>Install</h6>
-                    <p>Do it yourself with our easy to follow <a href="#" class="text-decoration-none">guides</a> or
-                        have us install for you*</p>
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded step-column">
+                        <img src="style/images/p-1.jpg" alt="Install" class="step-icon rounded mx-auto d-block">
+                        <h5 class="step-title">Step 3</h5>
+                        <h6>Install</h6>
+                        <p>Do it yourself with our easy to follow <a href="#" class="text-decoration-none">guides</a> or
+                            have us install for you*</p>
+                    </div>
                 </div>
             </div>
         </section>
