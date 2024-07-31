@@ -73,26 +73,6 @@ body {
     }
 }
 
-#content-wrapper .content-category .img-category,
-#content-wrapper .content-proces .img-proces,
-#content-wrapper .content-testimonial .img-testimonial {
-    width: 100%;
-    height: 200px;
-}
-
-#content-wrapper .content-category .category:hover,
-#content-wrapper .content-proces .proces:hover,
-#content-wrapper .content-testimonial .testimonial:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-}
-
-#content-wrapper .content-category p,
-#content-wrapper .content-proces p,
-#content-wrapper .content-testimonial p {
-    font-weight: bold;
-}
-
 /* Introduce */
 
 #introduction-section {
@@ -123,7 +103,7 @@ body {
     background-color: #816
 }
 
-#introduction-section .image-right{
+#introduction-section .image-right {
     width: 345px;
 }
 
@@ -133,7 +113,7 @@ body {
 
 @media (max-width: 767px) {
 
-    #introduction-section .image-right .w-50{
+    #introduction-section .image-right .w-50 {
         width: 200px;
     }
 }
@@ -253,3 +233,87 @@ body {
 }
 
 /* End Process work */
+
+/* Contact */
+.contact-section {
+    background-color: #A1876A;
+    padding: 2rem 0;
+}
+
+.contact-section h2 {
+    color: #fff;
+}
+
+.contact-section p {
+    color: #f8f9fa;
+}
+
+.contact-section {
+    .form-control {
+        border-radius: 0.5rem;
+    }
+
+    .btn-primary {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+}
+
+/* End Contact */
+
+/* Socials */
+.socials-section {
+    background-color: #D9D0C5;
+}
+
+.social-handle {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+}
+
+.socials-section {
+    .img-container {
+        width: 100%;
+        padding-top: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .img-container img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* End Socials */
+
+/* Features */
+.features-section {
+    background-color: #F8F9FA;
+
+    .icon-container {
+        width: 80px;
+        height: 80px;
+        background-color: #C0392B;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .icon {
+        color: #FFFFFF;
+        font-size: 40px;
+    }
+}
+
+
+/*End Features */
