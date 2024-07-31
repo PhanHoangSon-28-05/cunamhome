@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
 
-    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
     <link rel="stylesheet" href="style/ajax/libs/slick-carousel/1.6.0/slick.min.css">
     <link rel="stylesheet" href="style/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100">
+
     <link rel="stylesheet" href="style/css/custom.css">
 
     <script src="style/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -27,7 +29,7 @@
         <div class="bg-dark line p-0 m-0">
             <div class="align-items-start">
                 <div class="d-flex justify-content-between">
-                    <div class="col-4 col-md-4">
+                    <div class="col-12 col-md-4">
                         <div class="row ms-1">
                             <div class="button p-0 d-none d-md-block">
                                 <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
@@ -36,7 +38,7 @@
                             <div class="button px-0 col-1 d-md-none">
                                 <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
                             </div>
-                            <div id="slideshowLine" class="col-md-10 col-10">
+                            <div id="slideshowLine" class="col-md-10 col-10 text-md-left text-center">
                                 <a class="item text-white active" href="#">Navbar</a>
                                 <a class="item text-white" href="#">ss1</a>
                                 <a class="item text-white" href="#">ss2</a>
@@ -49,8 +51,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8 list d-none d-md-block">
-                        <ul class="list-unstyled d-inline-block float-end mx-3">
+                    <div class="col-md-8 list d-none d-md-block">
+                        <ul class="list-unstyled d-inline-block float-right mx-3">
                             <li class="d-inline-block">
                                 <a class="item text-white" aria-current="page" href="#">Home</a>
                             </li>
@@ -58,7 +60,7 @@
                                 <a class="item text-white" href="#">Link</a>
                             </li>
                             <li class="dropdown d-inline-block">
-                                <a class="dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
                                     aria-expanded="false">
                                     Dropdown
                                 </a>
@@ -78,9 +80,9 @@
         </div>
         <nav class="navbar navbar-expand-lg bg-light p-0 menu">
             <div class="container-fluid text-uppercase fw-bolder">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Logo -->
@@ -88,11 +90,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-muted" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Shades
                             </a>
                             <ul class="dropdown-menu dropdown-menu-start">
@@ -105,8 +107,8 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Blinds
                             </a>
                             <ul class="dropdown-menu dropdown-menu-start">
@@ -115,8 +117,8 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Drapery
                             </a>
                             <ul class="dropdown-menu dropdown-menu-start">
@@ -126,8 +128,8 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Outdoor
                             </a>
                             <ul class="dropdown-menu dropdown-menu-start">
@@ -135,8 +137,8 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Information
                             </a>
                             <ul class="dropdown-menu dropdown-menu-start">
@@ -193,7 +195,7 @@
                     <button class="btn btn-primary">Learn More</button>
                 </div>
                 <div class="col-md-6 col-4">
-                    <img src="style/images/Zebra/Artboard 20@4x.jpg" class="img-fluid image-right float-end rounded"
+                    <img src="style/images/Zebra/Artboard 20@4x.jpg" class="img-fluid image-right float-right rounded"
                         alt="Top Image">
                 </div>
             </div>
@@ -449,7 +451,7 @@
     </footer>
 
 
-    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="style/slider/line/line.js"></script>
     <script src="style/slider/header/slider.js"></script>
 

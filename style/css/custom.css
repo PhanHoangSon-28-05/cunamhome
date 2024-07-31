@@ -45,6 +45,7 @@ body {
     width: 80%;
 }
 
+
 @media (min-width: 768px) and (max-width: 1023px) {
     #header div.line .col-4 {
         width: 100%;
@@ -58,10 +59,6 @@ body {
 @media (max-width: 767px) {
     #header div.line .col-4 {
         width: 100%;
-    }
-
-    #header div.line .col-4 #slideshowLine {
-        text-align: center;
     }
 
     #header div.line .col-4 .button i {
