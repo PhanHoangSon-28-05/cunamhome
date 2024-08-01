@@ -118,116 +118,114 @@ body {
 /* End Introduce */
 
 /* Product */
-.products {
-    .container-product {
-        margin: 0 auto;
-        padding: 20px;
+
+.products .container-product {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.products h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products p {
+    margin-bottom: 30px;
+}
+
+.products .shop-now {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.products .shop-now a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.products .shop-now a:hover {
+    background-color: #ddd;
+}
+
+.products .card img {
+    height: 500px;
+}
+
+.products .card-price {
+    font-size: 1.2rem;
+    color: red;
+}
+
+.products .card-old-price {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.products .badge-discount {
+    background-color: orange;
+    color: white;
+}
+
+.products .color-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+@media (max-width: 1023px) {
+    .products .card img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .products .badge-discount {
+        font-size: 10px;
     }
 
-    h1 {
-        text-align: center;
-        margin-bottom: 20px;
+    .products .container-product .px-5 {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
-    p {
-        margin-bottom: 30px;
-    }
-
-    .shop-now {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-    }
-
-    .shop-now a {
-        text-decoration: none;
-        color: #333;
-        padding: 10px 20px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-
-    .shop-now a:hover {
-        background-color: #ddd;
-    }
-
-    .card img {
-        height: 500px;
-    }
-
-    .card-price {
-        font-size: 1.2rem;
-        color: red;
-    }
-
-    .card-old-price {
-        text-decoration: line-through;
-        color: grey;
-    }
-
-    .badge-discount {
-        background-color: orange;
-        color: white;
-    }
-
-    .color-dot {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        margin: 0 5px;
-    }
-
-    @media (max-width: 1023px) {
-        .card img {
-            height: 200px;
-        }
-    }
-
-    @media (max-width: 767px) {
-        .badge-discount {
-            font-size: 10px;
-        }
-
-        .container-product .px-5 {
-            padding-right: 0px;
-            padding-left: 0px;
-        }
-
-        .card img {
-            height: 300px;
-        }
+    .products .card img {
+        height: 300px;
     }
 }
 
 /* End Product */
 
 /* Process work */
-.process-work {
-    .step-icon {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-    }
-
-    .step-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .step-column {
-        margin: 0 3px;
-    }
-
-    .step-row {
-        justify-content: center;
-    }
-
-    .card p {
-        padding: 0 1vmin;
-    }
+.step-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
+
+.step-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.step-column {
+    margin: 0 3px;
+}
+
+.step-row {
+    justify-content: center;
+}
+
+.card p {
+    padding: 0 1vmin;
+}
+
 
 /* End Process work */
 
@@ -245,16 +243,14 @@ body {
     color: #f8f9fa;
 }
 
-.contact-section {
-    .form-control {
-        border-radius: 0.5rem;
-    }
+.form-control {
+    border-radius: 0.5rem;
+}
 
-    .btn-primary {
-        background-color: #fff;
-        color: #000;
-        border: 1px solid #000;
-    }
+.btn-primary {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
 
 /* End Contact */
@@ -270,24 +266,23 @@ body {
     font-size: 16px;
 }
 
-.socials-section {
-    .img-container {
-        width: 100%;
-        padding-top: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .img-container img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.img-container {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
 }
+
+.img-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* End Socials */
 
@@ -295,21 +290,22 @@ body {
 .features-section {
     background-color: #F8F9FA;
 
-    .icon-container {
-        width: 80px;
-        height: 80px;
-        background-color: #C0392B;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
+}
 
-    .icon {
-        color: #FFFFFF;
-        font-size: 40px;
-    }
+.icon-container {
+    width: 80px;
+    height: 80px;
+    background-color: #C0392B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icon {
+    color: #FFFFFF;
+    font-size: 40px;
 }
 
 
