@@ -16,6 +16,10 @@ body {
     color: #333;
 }
 
+ul {
+    list-style: none;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -203,26 +207,26 @@ body {
 /* End Product */
 
 /* Process work */
-.step-icon {
+.process-work .step-icon {
     width: 100px;
     height: 100px;
     margin-bottom: 20px;
 }
 
-.step-title {
+.process-work .step-title {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.step-column {
+.process-work .step-column {
     margin: 0 3px;
 }
 
-.step-row {
+.process-work .step-row {
     justify-content: center;
 }
 
-.card p {
+.process-work .card p {
     padding: 0 1vmin;
 }
 
@@ -243,11 +247,11 @@ body {
     color: #f8f9fa;
 }
 
-.form-control {
+.contact-section .form-control {
     border-radius: 0.5rem;
 }
 
-.btn-primary {
+.contact-section.btn-primary {
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
@@ -266,14 +270,14 @@ body {
     font-size: 16px;
 }
 
-.img-container {
+.socials-section .img-container {
     width: 100%;
     padding-top: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.img-container img {
+.socials-section .img-container img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -292,7 +296,7 @@ body {
 
 }
 
-.icon-container {
+.features-section .icon-container {
     width: 80px;
     height: 80px;
     background-color: #C0392B;
@@ -303,10 +307,104 @@ body {
     margin: 0 auto;
 }
 
-.icon {
+.features-section .icon {
     color: #FFFFFF;
     font-size: 40px;
 }
 
 
 /*End Features */
+
+/*Product Detail*/
+#product-detail-section .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#product-detail-section .radio-img-label {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    height: auto;
+    display: block;
+}
+
+#product-detail-section .buttons .btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+#product-detail-section .buttons .btn-outline-secondary {
+    border-color: #ccc;
+    color: #333;
+}
+
+#product-detail-section .buttons .btn-outline-secondary:hover {
+    background-color: #f7f7f7;
+}
+
+/*End Product Detail*/
+
+/*Order shutters */
+#order-shutters h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#order-shutters .shutter-image {
+    height: auto;
+    background-color: #f0f0f0;
+}
+
+
+#order-shutters .radio-img {
+    display: none;
+}
+
+#order-shutters .radio-img-label {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    transition: border-color 0.3s;
+}
+
+#order-shutters .radio-img-label img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+#order-shutters .radio-img:checked+.radio-img-label {
+    border-color: #007bff;
+}
+
+#order-shutters .color-option p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#order-shutters .btn-secondary {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+}
+
+#order-shutters a.text-decoration-underline {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#order-shutters a.text-decoration-underline:hover {
+    text-decoration: underline;
+}
+
+#order-shutters .btn[disabled] {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+/*End Order shutters */
