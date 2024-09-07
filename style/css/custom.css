@@ -354,11 +354,23 @@ ul {
     font-weight: bold;
 }
 
+#order-shutters .card-header .show-img-text {
+    width: 200px;
+}
+
+#order-shutters .card-header .text-show,
+#order-shutters .card-header .img-show {
+    display: none;
+}
+
+#order-shutters .card-header img {
+    max-width: 50px;
+}
+
 #order-shutters .shutter-image {
     height: auto;
     background-color: #f0f0f0;
 }
-
 
 #order-shutters .radio-img {
     display: none;

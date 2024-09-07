@@ -23,6 +23,25 @@
     <link rel="stylesheet" href="style/slider/line/line.css">
     <link rel="stylesheet" href="style/slider/header/slider.css">
 
+    <style>
+        .default {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            border-left: none;
+            height: 300px;
+        }
+
+        .nodefault {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            border-left: none;
+            height: 300px;
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -156,66 +175,138 @@
                     </ul>
                 </div>
                 <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="cart.html" class="btn" type="submit"><i class="fa-solid fa-cart-shopping"></i></a>
+
             </div>
         </nav>
     </header>
     <main id="content-wrapper" class="main-v2">
-        <section id="order-shutters" class="container my-5">
-            <h1 class="text-md-left">Order DIY Shutters</h1>
-            <div class="row border-top border-dark pt-2">
-                <div class="col-md-6 text-center pl-0">
-                    <div class="shutter-image bg-light d-flex justify-content-center align-items-center">
-                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.32 PM.JPG" alt="Shutter Image"
-                            class="img-fluid">
+        <section id="order-shutters" class="container-fluid my-5">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th colspan="3" class="text-center">Measurement</th>
+                                    <th>Unit & Unit price</th>
+                                    <th>Total price</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Width (inch)</th>
+                                    <th>Heigh (inch)</th>
+                                    <th>Square feet</th>
+                                    <th colspan="2"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6" class="bg-secondary text-white">Kitchen</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 1</td>
+                                    <td>60.2</td>
+                                    <td>61.0</td>
+                                    <td>26</td>
+                                    <td>$17.00</td>
+                                    <td>$433.52</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 2</td>
+                                    <td>26.1</td>
+                                    <td>83.3</td>
+                                    <td>15</td>
+                                    <td>$17.00</td>
+                                    <td>$256.67</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 3</td>
+                                    <td>29.6</td>
+                                    <td>35.7</td>
+                                    <td>7</td>
+                                    <td>$17.00</td>
+                                    <td>$170.00</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 4</td>
+                                    <td>29.4</td>
+                                    <td>35.5</td>
+                                    <td>7</td>
+                                    <td>$17.00</td>
+                                    <td>$170.00</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 5</td>
+                                    <td>64.5</td>
+                                    <td>58</td>
+                                    <td>26</td>
+                                    <td>$17.00</td>
+                                    <td>$441.65</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="bg-secondary text-white">Living Room</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 6</td>
+                                    <td>22.6</td>
+                                    <td>58.5</td>
+                                    <td>9</td>
+                                    <td>$17.00</td>
+                                    <td>$170.00</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 7</td>
+                                    <td>22.6</td>
+                                    <td>58.5</td>
+                                    <td>9</td>
+                                    <td>$17.00</td>
+                                    <td>$170.00</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 8</td>
+                                    <td>58.5</td>
+                                    <td>58.5</td>
+                                    <td>24</td>
+                                    <td>$17.00</td>
+                                    <td>$404.02</td>
+                                </tr>
+                                <tr>
+                                    <td>wd 9 (Stair)</td>
+                                    <td>28.6</td>
+                                    <td>70.3</td>
+                                    <td>14</td>
+                                    <td>$17.00</td>
+                                    <td>$237.36</td>
+                                </tr>
+                                <tr>
+                                    <td>Remote x 3 ($45/remote)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td>45</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">Subtotal</td>
+                                    <td>$2,453.21</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">Discount (25%)</td>
+                                    <td>$613.30</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">Tax (10.4%)</td>
+                                    <td>$191.35</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">Total</td>
+                                    <td>$2,031.26</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <h3>Pick a color</h3>
-                    <p class="text-md-right">
-                        <a class="btn" data-toggle="collapse" href="#multiCollapseExample1" role="button"
-                            aria-expanded="false" aria-controls="multiCollapseExample1"><i
-                                class="fa-solid fa-filter"></i>Filter</a>
-                    </p>
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                <div class="card card-body p-0">
-                                    <input type="text" class="form-control" placeholder="Search for names.."
-                                        id="myInput" onkeyup="myFunction()" aria-label="Username"
-                                        aria-describedby="basic-addon1">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="d-flex flex-row bd-highlight mb-3 mt-3" id="myUL">
-                        <li class="color-option text-center">
-                            <input type="radio" id="option1" name="image-radio" class="radio-img" value="1">
-                            <label for="option1" class="radio-img-label">
-                                <img src="style/images/Color/S_15_051.jpg" alt="Option 1">
-                            </label>
-                            <p>Cream<br>2729</p>
-                        </li>
-                        <li class="color-option text-center">
-                            <input type="radio" id="option2" name="image-radio" class="radio-img" value="2">
-                            <label for="option2" class="radio-img-label">
-                                <img src="style/images/Color/S_15_729.jpg" alt="Option 2">
-                            </label>
-                            <p>Simply White<br>2051</p>
-                        </li>
-                        <li class="color-option text-center">
-                            <input type="radio" id="option3" name="image-radio" class="radio-img" value="3">
-                            <label for="option3" class="radio-img-label">
-                                <img src="style/images/Color/S_15_922.jpg" alt="Option 3">
-                            </label>
-                            <p>Winter White<br>2922</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-12 text-center">
-                    <a id="customizeBuyButton" class="btn btn-dark" href="product-customize-buy.html" disabled>Customize
-                        & Buy</a>
                 </div>
             </div>
         </section>

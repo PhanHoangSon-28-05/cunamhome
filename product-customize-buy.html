@@ -23,6 +23,26 @@
     <link rel="stylesheet" href="style/slider/line/line.css">
     <link rel="stylesheet" href="style/slider/header/slider.css">
 
+    <style>
+        .default {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            border-left: none;
+            height: 300px;
+        }
+
+        .nodefault {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            border-left: none;
+            height: 300px;
+            display: none;
+        }
+        
+    </style>
+
 </head>
 
 <body>
@@ -156,6 +176,7 @@
                     </ul>
                 </div>
                 <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="cart.html" class="btn" type="submit"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
     </header>
@@ -165,51 +186,215 @@
             <div class="row border-top border-dark pt-2">
                 <div class="col-md-6 text-center pl-0">
                     <div class="shutter-image bg-light d-flex justify-content-center align-items-center">
-                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.32 PM.JPG" alt="Shutter Image"
-                            class="img-fluid">
+                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.32 PM.JPG" id="Cream"
+                            class="tabcontent default" alt="Shutter Image" class="img-fluid">
+                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.30 PM.JPG" id="Simply"
+                            class="tabcontent nodefault" alt="Shutter Image" class="img-fluid">
+                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.33 PM.JPG" id="Winter"
+                            class="tabcontent nodefault" alt="Shutter Image" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>Pick a color</h3>
-                    <p class="text-md-right">
-                        <a class="btn" data-toggle="collapse" href="#multiCollapseExample1" role="button"
-                            aria-expanded="false" aria-controls="multiCollapseExample1"><i
-                                class="fa-solid fa-filter"></i>Filter</a>
-                    </p>
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                <div class="card card-body p-0">
-                                    <input type="text" class="form-control" placeholder="Search for names.."
-                                        id="myInput" onkeyup="myFunction()" aria-label="Username"
-                                        aria-describedby="basic-addon1">
+                    <div class="accordion" id="accordionExample">
+                        <div class="mb-1">
+                            <div class="card border-1 border-dark rounded">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left d-flex" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne0" aria-expanded="true"
+                                            aria-controls="collapseOne0">
+                                            <span class="flex-grow-1">Pick a color</span>
+                                            <div class="show-img-text d-flex">
+                                                <div id="selectedText0" class="text-show text-muted flex-grow-1">
+                                                </div>
+                                                <div class="">
+                                                    <img id="selectedImage0" src="" alt="Selected Image"
+                                                        class="img-show img-fluid ml-1">
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne0" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="text-md-right">
+                                            <a class="btn" data-toggle="collapse" href="#multiCollapseExample1"
+                                                role="button" aria-expanded="false"
+                                                aria-controls="multiCollapseExample1"><i class="fa-solid fa-filter"></i>
+                                                Filter</a>
+                                        </p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                                    <div class="card card-body p-0">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Search for names.." id="myInput"
+                                                            onkeyup="myFunction()" aria-label="Username"
+                                                            aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="d-flex flex-row bd-highlight mb-3 mt-3" id="myUL">
+                                            <li class="color-option text-center" onmouseover="openCity(event, 'Cream')">
+                                                <input type="radio" id="option1" name="image-radio" class="radio-img"
+                                                    value="1"
+                                                    onclick="selectImage('style/images/Color/S_15_051.jpg','Simply Cream 2729','0')">
+                                                <label for="option1" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_051.jpg" alt="Option 1">
+                                                </label>
+                                                <p>Cream<br>2729</p>
+                                            </li>
+                                            <li class="color-option text-center"
+                                                onmouseover="openCity(event, 'Simply')">
+                                                <input type="radio" id="option2" name="image-radio" class="radio-img"
+                                                    value="2"
+                                                    onclick="selectImage('style/images/Color/S_15_729.jpg','Simply Cream 2051','0')">
+                                                <label for="option2" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_729.jpg" alt="Option 2">
+                                                </label>
+                                                <p>Simply White<br>2051</p>
+                                            </li>
+                                            <li class="color-option text-center"
+                                                onmouseover="openCity(event, 'Winter')">
+                                                <input type="radio" id="option3" name="image-radio" class="radio-img"
+                                                    value="3"
+                                                    onclick="selectImage('style/images/Color/S_15_922.jpg','Simply Cream 2922', '0')">
+                                                <label for="option3" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_922.jpg" alt="Option 3">
+                                                </label>
+                                                <p>Winter White<br>2922</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-1">
+                            <div class="card border-1 border-dark rounded">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left d-flex" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true"
+                                            aria-controls="collapseOne1">
+                                            <span class="flex-grow-1">Pick a color</span>
+                                            <div class="show-img-text d-flex">
+                                                <div id="selectedText1" class="text-show text-muted">
+                                                </div>
+                                                <img id="selectedImage1" src="" alt="Selected Image"
+                                                    class="img-show img-fluid ml-1">
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul class="d-flex flex-row bd-highlight mb-3 mt-3" id="myUL1">
+                                            <li class="color-option text-center">
+                                                <input type="radio" id="option1-1" name="image-radio1" class="radio-img"
+                                                    value="1"
+                                                    onclick="selectImage('style/images/Color/S_15_051.jpg', 'Simply Cream 2729 </br> <p>$<span class=\'number\'>16</span></p>','1')">
+                                                <label for="option1-1" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_051.jpg" alt="Option 1">
+                                                </label>
+                                                <p>Cream<br>2729</p>
+                                                <p>$<span>16</span></p>
+                                            </li>
+                                            <li class="color-option text-center">
+                                                <input type="radio" id="option2-1" name="image-radio1" class="radio-img"
+                                                    value="2"
+                                                    onclick="selectImage('style/images/Color/S_15_729.jpg', 'Simply Cream 2051  </br> <p>$<span class=\'number\'>17</span></p>','1')">
+                                                <label for="option2-1" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_729.jpg" alt="Option 2">
+                                                </label>
+                                                <p>Simply White<br>2051</p>
+                                                <p>$<span>17</span></p>
+                                            </li>
+                                            <li class="color-option text-center">
+                                                <input type="radio" id="option3-1" name="image-radio1" class="radio-img"
+                                                    value="3"
+                                                    onclick="selectImage('style/images/Color/S_15_922.jpg', 'Simply Cream 2922 </br> <p>$<span class=\'number\'>18</span></p>','1')">
+                                                <label for="option3-1" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_922.jpg" alt="Option 3">
+                                                </label>
+                                                <p>Winter White<br>2922</p>
+                                                <p>$<span>18</span></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-1">
+                            <div class="card border-1 border-dark rounded">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left d-flex" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true"
+                                            aria-controls="collapseOne2">
+                                            <span class="flex-grow-1">Pick a color</span>
+                                            <div class="show-img-text d-flex">
+                                                <div id="selectedText2" class="text-show text-muted">
+                                                </div>
+                                                <img id="selectedImage2" src="" alt="Selected Image"
+                                                    class="img-show img-fluid ml-1">
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul class="d-flex flex-row bd-highlight mb-3 mt-3" id="myUL2">
+                                            <li class="color-option text-center">
+                                                <input type="radio" id="option1-2" name="image-radio2" class="radio-img"
+                                                    value="1"
+                                                    onclick="selectImage('style/images/Color/S_15_051.jpg', 'Simply Cream 2729  </br> <p>$<span class=\'number\'>16</span></p>','2')">
+                                                <label for="option1-2" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_051.jpg" alt="Option 1">
+                                                </label>
+                                                <p>Cream<br>2729</p>
+                                                <p>$<span>16</span></p>
+                                            </li>
+                                            <li class="color-option text-center">
+                                                <input type="radio" id="option2-2" name="image-radio2" class="radio-img"
+                                                    value="2"
+                                                    onclick="selectImage('style/images/Color/S_15_729.jpg', 'Simply Cream 2051 </br> <p>$<span class=\'number\'>17</span></p>','2')">
+                                                <label for="option2-2" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_729.jpg" alt="Option 2">
+                                                </label>
+                                                <p>Simply White<br>2051</p>
+                                                <p>$<span>17</span></p>
+                                            </li>
+                                            <li class="color-option text-center">
+                                                <input type="radio" id="option3-2" name="image-radio2" class="radio-img"
+                                                    value="3"
+                                                    onclick="selectImage('style/images/Color/S_15_922.jpg', 'Simply Cream 2922  </br> <p>$<span class=\'number\'>18</span></p>','2')">
+                                                <label for="option3-2" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_922.jpg" alt="Option 3">
+                                                </label>
+                                                <p>Winter White<br>2922</p>
+                                                <p>$<span>18</span></p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <ul class="d-flex flex-row bd-highlight mb-3 mt-3" id="myUL">
-                        <li class="color-option text-center">
-                            <input type="radio" id="option1" name="image-radio" class="radio-img" value="1">
-                            <label for="option1" class="radio-img-label">
-                                <img src="style/images/Color/S_15_051.jpg" alt="Option 1">
-                            </label>
-                            <p>Cream<br>2729</p>
-                        </li>
-                        <li class="color-option text-center">
-                            <input type="radio" id="option2" name="image-radio" class="radio-img" value="2">
-                            <label for="option2" class="radio-img-label">
-                                <img src="style/images/Color/S_15_729.jpg" alt="Option 2">
-                            </label>
-                            <p>Simply White<br>2051</p>
-                        </li>
-                        <li class="color-option text-center">
-                            <input type="radio" id="option3" name="image-radio" class="radio-img" value="3">
-                            <label for="option3" class="radio-img-label">
-                                <img src="style/images/Color/S_15_922.jpg" alt="Option 3">
-                            </label>
-                            <p>Winter White<br>2922</p>
-                        </li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Sum money</p>
+                        </div>
+                        <div class="col-4">
+                            <p>$<span id="total"></span></p>
+                        </div>
+                    </div>
                     <div class="text-md-left">
                         <a id="customizeBuyButton" class="btn btn-dark" href="product-customize-buy.html"
                             disabled>Customize
@@ -265,6 +450,90 @@
             }
         });
     </script>
+    <script>
+        function selectImage(imageSrc, text, idSuffix) {
+            document.getElementById('selectedImage' + idSuffix).src = imageSrc;
+            document.getElementById('selectedImage' + idSuffix).style.display = 'inline';
+
+            document.getElementById('selectedText' + idSuffix).innerHTML = text;
+            document.getElementById('selectedText' + idSuffix).style.display = 'block';
+
+            $('#collapseOne' + idSuffix).collapse('hide');
+
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            var total = 0;
+            var numbers = document.querySelectorAll('.number');
+
+            numbers.forEach(function (span) {
+                total += parseInt(span.innerText);
+            });
+
+            document.getElementById('total').innerText = total;
+        }
+
+        window.onload = calculateTotal;
+    </script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <!-- 
+    <script>
+
+        function selectImage(imageSrc, text, idSuffix) {
+            document.getElementById('selectedText' + idSuffix).innerHTML = text;
+            document.getElementById('selectedText' + idSuffix).style.display = 'block';
+
+            document.getElementById('selectedImage' + idSuffix).src = imageSrc;
+            document.getElementById('selectedImage' + idSuffix).style.display = 'block';
+            $('#collapseOne' + idSuffix).collapse('hide');
+        }
+    </script>
+
+    <script>
+        function selectImage(imageUrl, text, groupId) {
+            // Hiển thị hình ảnh được chọn
+            document.getElementById('selectedImage' + groupId).src = imageUrl;
+            document.getElementById('selectedImage' + groupId).style.display = 'inline';
+
+            // Hiển thị thông tin mô tả được chọn
+            document.getElementById('selectedText' + groupId).innerHTML = text;
+
+            // Tính lại tổng sau khi thay đổi lựa chọn
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            var total = 0;
+            // Lấy tất cả các span có class "number"
+            var numbers = document.querySelectorAll('.number');
+
+            // Duyệt qua các phần tử và tính tổng
+            numbers.forEach(function (span) {
+                total += parseInt(span.innerText);
+            });
+
+            // Hiển thị tổng số tiền
+            document.getElementById('total').innerText = total;
+        }
+
+        // Tính tổng ngay khi trang được tải
+        window.onload = calculateTotal;
+    </script> -->
 </body>
 
 </html>
