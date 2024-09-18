@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="style/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="style/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style/css/customsample.css">
+
+
+    <script src="style/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="style/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="style/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+    <link rel="stylesheet" href="style/slider/line/line.css">
+    <link rel="stylesheet" href="style/slider/header/slider.css">
+
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="bg-dark line p-0 m-0">
+            <div class="align-items-start">
+                <div class="d-flex justify-content-between">
+                    <div class="col-12 col-md-4">
+                        <div class="row ms-1">
+                            <div class="button p-0 d-none d-md-block">
+                                <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
+                                <i class="fa-solid fa-chevron-right text-white" onclick="nextSlideLine()"></i>
+                            </div>
+                            <div class="button px-0 col-1 d-md-none">
+                                <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
+                            </div>
+                            <div id="slideshowLine" class="col-md-10 col-10 text-md-left text-center">
+                                <a class="item text-white active" href="#">Navbar</a>
+                                <a class="item text-white" href="#">ss1</a>
+                                <a class="item text-white" href="#">ss2</a>
+                                <a class="item text-white" href="#">ss3</a>
+                                <a class="item text-white" href="#">ss4</a>
+                                <a class="item text-white" href="#">ss5</a>
+                            </div>
+                            <div class="button ms-3 ps-1 col-1 d-md-none">
+                                <i class="fa-solid fa-chevron-right text-white" onclick="nextSlideLine()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 list d-none d-md-block">
+                        <ul class="list-unstyled d-inline-block float-right mx-3">
+                            <li class="d-inline-block ml-1">
+                                <a class="item text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="d-inline-block ml-1">
+                                <a class="item text-white" href="#">Link</a>
+                            </li>
+                            <li class="dropdown d-inline-block ml-1">
+                                <a class="dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="d-inline-block ml-1">
+                                <a class="item text-white">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light p-0 menu">
+            <div class="container-fluid text-uppercase fw-bolder">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand logo me-auto" href="#"><img src="style/images/Logo-1.png" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-muted" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Shades
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start">
+                                <li><a class="dropdown-item" href="#">Horizontal Sheer</a></li>
+                                <li><a class="dropdown-item" href="#">Vertical Sheer</a></li>
+                                <li><a class="dropdown-item" href="#">Cellular</a></li>
+                                <li><a class="dropdown-item" href="#">Roller</a></li>
+                                <li><a class="dropdown-item" href="#">Roman</a></li>
+                                <li><a class="dropdown-item" href="#">Combi Roman</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Blinds
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start">
+                                <li><a class="dropdown-item" href="#">Wood</a></li>
+                                <li><a class="dropdown-item" href="#">Metal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Drapery
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start">
+                                <li><a class="dropdown-item" href="#">Sheer</a></li>
+                                <li><a class="dropdown-item" href="#">Custom</a></li>
+                                <li><a class="dropdown-item" href="#">Woven</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Outdoor
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start">
+                                <li><a class="dropdown-item" href="#">Zipscreen</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Information
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start">
+                                <li><a class="dropdown-item" href="#">Why CuNam</a></li>
+                                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                                <li><a class="dropdown-item" href="#">Warranty</a></li>
+                                <li><a class="dropdown-item" href="#">Customer Support</a></li>
+                                <li><a class="dropdown-item" href="#">FAQS</a></li>
+                                <li><a class="dropdown-item" href="#">Child Safty</a></li>
+                                <li><a class="dropdown-item" href="#">Review</a></li>
+                                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="cart.html" class="btn" type="submit"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+        <div class="slider-container">
+            <div class="split-slideshow">
+                <div class="slideshow">
+                    <div class="slider">
+                        <div class="item">
+                            <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow-text">
+                    <div class="item">Canyon</div>
+                    <div class="item">Desert</div>
+                    <div class="item">Erosion</div>
+                    <div class="item">Shape</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content-wrapper" class="main-v2">
+        <section id="introduction-section" class="container-fluid mt-2">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-8">
+                    <h1>Our World of Shades</h1>
+                    <p>Discover the story behind our premium materials, crafted with care and precision. Embrace the
+                        artistry of European, Korean, and Turkish fabrics that define luxury. Your window to elegance
+                        awaits.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+                <div class="col-md-6 col-4">
+                    <img src="style/images/Zebra/Artboard 20@4x.jpg" class="img-fluid image-right float-right rounded"
+                        alt="Top Image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-12">
+                    <img src="style/images/Horizontal Sheer/4-27.jpg" class="img-fluid rounded image-bottom"
+                        alt="Bottom Image">
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid my-5 products">
+            <div class="container-product">
+                <div class="px-md-5 px-sm-0">
+                    <h1 class="text-center text-uppercase">OUR PREMIER PRODUCTS</h1>
+                    <p class="text-center">We use only the ﬁnest fabrics from Europe, Turkey and Korea ensuring
+                        exceptional
+                        quality and style.
+                        Our expert craftsmen ensure perfectly ﬁt and attention to detail, creating window coverings that
+                        not
+                        only elevate your home’s style but also stand the test of time
+                    </p>
+                    <div class="shop-now">
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-6 my-1">
+                        <a href="product.html">
+                            <div class="card">
+                                <img src="style/images/Wooden Shade/Artboard 64@4x.jpg" class="card-img-top"
+                                    alt="Oakley">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wooden Shade<span class="badge badge-discount">10% OFF</span>
+                                    </h5>
+                                    <p class="card-text">Cross Linen Texture Curtains</p>
+                                    <p>From <span class="card-price">$125.10</span> <span
+                                            class="card-old-price">$139.00</span></p>
+                                    <div>
+                                        <div class="color-dot" style="background-color: #d2b48c;"></div>
+                                        <div class="color-dot" style="background-color: #f5f5dc;"></div>
+                                        <div class="color-dot" style="background-color: #faf0e6;"></div>
+                                        <div class="color-dot" style="background-color: #fff5ee;"></div>
+                                        <p><a href="#" class="text-decoration-none">+ 9 more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-6 my-1">
+                        <a href="product.html">
+                            <div class="card">
+                                <img src="style/images/Zebra/Artboard 169@4x.jpg" class="card-img-top" alt="Oakley">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zebra <span class="badge badge-discount">10% OFF</span></h5>
+                                    <p class="card-text">Cross Linen Texture Curtains</p>
+                                    <p>From <span class="card-price">$125.10</span> <span
+                                            class="card-old-price">$139.00</span></p>
+                                    <div>
+                                        <div class="color-dot" style="background-color: #d2b48c;"></div>
+                                        <div class="color-dot" style="background-color: #f5f5dc;"></div>
+                                        <div class="color-dot" style="background-color: #faf0e6;"></div>
+                                        <div class="color-dot" style="background-color: #fff5ee;"></div>
+                                        <p><a href="#" class="text-decoration-none">+ 9 more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-6 my-1">
+                        <a href="product.html">
+                            <div class="card">
+                                <img src="style/images/Roman shade/Artboard 78@4x.jpg" class="card-img-top"
+                                    alt="Oakley">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roman shade <span class="badge badge-discount">10% OFF</span>
+                                    </h5>
+                                    <p class="card-text">Cross Linen Texture Curtains</p>
+                                    <p>From <span class="card-price">$125.10</span> <span
+                                            class="card-old-price">$139.00</span></p>
+                                    <div>
+                                        <div class="color-dot" style="background-color: #d2b48c;"></div>
+                                        <div class="color-dot" style="background-color: #f5f5dc;"></div>
+                                        <div class="color-dot" style="background-color: #faf0e6;"></div>
+                                        <div class="color-dot" style="background-color: #fff5ee;"></div>
+                                        <p><a href="#" class="text-decoration-none">+ 9 more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-6 my-1">
+                        <a href="product.html">
+                            <div class="card">
+                                <img src="style/images/Horizontal Sheer/7FF04775-82ED-4EF2-ABF1-462534813D96.JPG"
+                                    class="card-img-top" alt="Oakley">
+                                <div class="card-body">
+                                    <h5 class="card-title">Horizontal sheer <span class="badge badge-discount">10%
+                                            OFF</span></h5>
+                                    <p class="card-text">Cross Linen Texture Curtains</p>
+                                    <p>From <span class="card-price">$125.10</span> <span
+                                            class="card-old-price">$139.00</span></p>
+                                    <div>
+                                        <div class="color-dot" style="background-color: #d2b48c;"></div>
+                                        <div class="color-dot" style="background-color: #f5f5dc;"></div>
+                                        <div class="color-dot" style="background-color: #faf0e6;"></div>
+                                        <div class="color-dot" style="background-color: #fff5ee;"></div>
+                                        <p><a href="#" class="text-decoration-none">+ 9 more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid text-center my-5 process-work">
+            <div class="px-5">
+                <h1 class="text-center text-uppercase">process work</h1>
+            </div>
+            <div class="row step-row">
+                <div class="col-md-3">
+                    <div class="card shadow mb-5 bg-body rounded step-column">
+                        <img src="style/images/p-1.jpg" alt="Measure" class="step-icon rounded mx-auto d-block">
+                        <h5 class="step-title">Step 1</h5>
+                        <h6>Measure</h6>
+                        <p>Use our <a href="#" class="text-decoration-none">guides</a> to ensure you measure from the
+                            right
+                            places</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow mb-5 bg-body rounded step-column">
+                        <img src="style/images/p-1.jpg" alt="Order" class="step-icon rounded mx-auto d-block">
+                        <h5 class="step-title">Step 2</h5>
+                        <h6>Order</h6>
+                        <p>Jump back online & create your customised order, shipped to you for <strong>just
+                                $30!</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow mb-5 bg-body rounded step-column">
+                        <img src="style/images/p-1.jpg" alt="Install" class="step-icon rounded mx-auto d-block">
+                        <h5 class="step-title">Step 3</h5>
+                        <h6>Install</h6>
+                        <p>Do it yourself with our easy to follow <a href="#" class="text-decoration-none">guides</a> or
+                            have us install for you*</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section py-5" style="background-color: #A1876A;">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-md-block col-md-4 ">
+                        <img src="style/images/Roman shade/Artboard 78@4x.jpg" class="img-fluid rounded"
+                            alt="Bottom Image">
+                    </div>
+                    <div class="col-12  col-md-8 ">
+                        <div class="container">
+                            <h2 class="text-center mb-4">Free in-home appointment!</h2>
+                            <p class="text-center mb-4">Interested in working together? Fill out some info and we will
+                                be in
+                                touch
+                                shortly. We can't wait to hear from you!</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Message"
+                                        required></textarea>
+                                </div>
+                                <div class="btn-wrapper d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="socials-section py-5" style="background-color: #D9D0C5;">
+            <div class="container">
+                <h2 class="text-center mb-4">Connect with us on socials!</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="img-container">
+                            <img src="style/images/Horizontal Sheer/2-81.jpg" alt="Image 1" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="img-container">
+                            <img src="style/images/Horizontal Sheer/4-27.jpg" alt="Image 2" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="img-container">
+                            <img src="style/images/Horizontal Sheer/4-34.jpg" alt="Image 3" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="img-container">
+                            <img src="style/images/Horizontal Sheer/7-29.jpg" alt="Image 4" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <div class="social-handle"
+                        style="background-color: #B0A28A; padding: 10px 20px; border-radius: 20px;">
+                        <span>@Shadesbycunam</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features-section py-5" style="background-color: #F8F9FA;">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-piggy-bank icon"></i> <!-- Biểu tượng Piggy Bank -->
+                        </div>
+                        <h5 class="font-weight-bold">Money Saver</h5>
+                        <p>The price is less than half of that in an offline store. Products go directly from the
+                            factory to your doorstep.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-industry icon"></i> <!-- Biểu tượng Industry -->
+                        </div>
+                        <h5 class="font-weight-bold">Finest Manufacturer</h5>
+                        <p>We specialize in curtains and make every panel with intention. Aesthetics driven, quality
+                            centered, fast customization.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-thumbs-up icon"></i> <!-- Biểu tượng Thumbs Up -->
+                        </div>
+                        <h5 class="font-weight-bold">Satisfaction Guarantee</h5>
+                        <p>Our dedicated design consultants are at your service and will get back to you within 24
+                            hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-3">
+        <h3 class="text-center bg-secondary">Footer</h3>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="style/slider/line/line.js"></script>
+</body>
+
+</html>
