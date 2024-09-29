@@ -22,195 +22,445 @@
 
     <link rel="stylesheet" href="style/slider/line/line.css">
     <link rel="stylesheet" href="style/slider/header/slider.css">
+    <style>
+        .default {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            border-left: none;
+            width: 750px;
+            height: auto;
+        }
 
+        .nodefault {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            border-left: none;
+            width: 750px;
+            height: auto;
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <header id="header" class="header">
-        <div class="bg-dark line p-0 m-0">
+        <div class="line p-0 m-0">
             <div class="align-items-start">
                 <div class="d-flex justify-content-between">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12">
                         <div class="row ms-1">
-                            <div class="button p-0 d-none d-md-block">
-                                <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
-                                <i class="fa-solid fa-chevron-right text-white" onclick="nextSlideLine()"></i>
-                            </div>
-                            <div class="button px-0 col-1 d-md-none">
-                                <i class="fa-solid fa-chevron-left text-white" onclick="prevSlideLine()"></i>
-                            </div>
-                            <div id="slideshowLine" class="col-md-10 col-10 text-md-left text-center">
-                                <a class="item text-white active" href="#">Navbar</a>
-                                <a class="item text-white" href="#">ss1</a>
-                                <a class="item text-white" href="#">ss2</a>
-                                <a class="item text-white" href="#">ss3</a>
-                                <a class="item text-white" href="#">ss4</a>
-                                <a class="item text-white" href="#">ss5</a>
-                            </div>
-                            <div class="button ms-3 ps-1 col-1 d-md-none">
-                                <i class="fa-solid fa-chevron-right text-white" onclick="nextSlideLine()"></i>
-                            </div>
+                            <p class="mx-4 my-3 h6 text-uppercase desplay-3" style="font-family: YACkoA9eHeY-0;">
+                                <span id="DXRx8LrzpJvlX4qS" style="color:#ffffff;">Limited Time:</span><span
+                                    id="RwYzCgC6mkYQTq6E" style="color:#ffffff;white-space:pre-wrap;"> </span><span
+                                    id="m5M5PvVdu8NL22OY" style="color:#ffffff;">30% off entire store with code
+                                    12345opening </span><br>
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-md-8 list d-none d-md-block">
-                        <ul class="list-unstyled d-inline-block float-right mx-3">
-                            <li class="d-inline-block ml-1">
-                                <a class="item text-white" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="d-inline-block ml-1">
-                                <a class="item text-white" href="#">Link</a>
-                            </li>
-                            <li class="dropdown d-inline-block ml-1">
-                                <a class="dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="d-inline-block ml-1">
-                                <a class="item text-white">Disabled</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg bg-light p-0 menu">
-            <div class="container-fluid text-uppercase fw-bolder">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Logo -->
-                <a class="navbar-brand logo me-auto" href="#"><img src="style/images/Logo-1.png" alt=""></a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-muted" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Shades
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-start">
-                                <li><a class="dropdown-item" href="#">Horizontal Sheer</a></li>
-                                <li><a class="dropdown-item" href="#">Vertical Sheer</a></li>
-                                <li><a class="dropdown-item" href="#">Cellular</a></li>
-                                <li><a class="dropdown-item" href="#">Roller</a></li>
-                                <li><a class="dropdown-item" href="#">Roman</a></li>
-                                <li><a class="dropdown-item" href="#">Combi Roman</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Blinds
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-start">
-                                <li><a class="dropdown-item" href="#">Wood</a></li>
-                                <li><a class="dropdown-item" href="#">Metal</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Drapery
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-start">
-                                <li><a class="dropdown-item" href="#">Sheer</a></li>
-                                <li><a class="dropdown-item" href="#">Custom</a></li>
-                                <li><a class="dropdown-item" href="#">Woven</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Outdoor
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-start">
-                                <li><a class="dropdown-item" href="#">Zipscreen</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Information
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-start">
-                                <li><a class="dropdown-item" href="#">Why CuNam</a></li>
-                                <li><a class="dropdown-item" href="#">Our Story</a></li>
-                                <li><a class="dropdown-item" href="#">Warranty</a></li>
-                                <li><a class="dropdown-item" href="#">Customer Support</a></li>
-                                <li><a class="dropdown-item" href="#">FAQS</a></li>
-                                <li><a class="dropdown-item" href="#">Child Safty</a></li>
-                                <li><a class="dropdown-item" href="#">Review</a></li>
-                                <li><a class="dropdown-item" href="#">Contact us</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <div class="container-fluid">
+            <div class="name-logo row">
+                <div class="logo col-12 p-0 text-center d-flex justify-content-center align-items-end"
+                    style="height: 100px;">
+                    <img class="logo" src="style/images/Logo-1.png" alt="">
+                    <div style="margin-left: 10px; margin-bottom: 0;">
+                        <p class="name h2" style=" margin-bottom: 0;">
+                            <span class="font-weight-bold" style="font-family: YAFcfpZDFTo-0;">unam</span>
+                            <span class="" style="font-family: YAFcfpZDFTo-0; margin-left: -20px;">shades</span>
+                        </p>
+                    </div>
+                    <div class="rounded-circle"
+                        style="width: 20px; height: 20px; background-color: #8A8911; position: relative; top: -50px;">
+                    </div>
+                    <div class="">
+                        <a class="h3 position-absolute " href="" style="right: 50px; top: 50px"><i
+                                class="fa-solid fa-magnifying-glass text-body"></i></a>
+                        <a class="h3 position-absolute " href="" style="right: 10px; top: 50px"><i
+                                class="fa-solid fa-cart-shopping text-body"></i></a>
+                    </div>
                 </div>
-                <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-        </nav>
+        </div>
+        <div class="container-fluid ">
+            <div class="row justify-content-center">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    Shades
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Horizontal Sheer</a>
+                                    <a class="dropdown-item" href="#">Vertical Sheer</a>
+                                    <a class="dropdown-item" href="#">Cellular</a>
+                                    <a class="dropdown-item" href="#">Roller</a>
+                                    <a class="dropdown-item" href="#">Roman</a>
+                                    <a class="dropdown-item" href="#">Combi Roman</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    BLINDS
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Wood</a>
+                                    <a class="dropdown-item" href="#">Metal</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    DRAPERY
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Sheer</a>
+                                    <a class="dropdown-item" href="#">Custom</a>
+                                    <a class="dropdown-item" href="#">Woven</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    How to
+                                </a>
+                                <div class="dropdown-menu">
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    About us
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
     <main id="content-wrapper" class="main-v2">
-        <section id="product-detail-section" class="container my-5">
+        <section id="order-shutters" class="container my-5">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.32 PM.JPG" class="img-fluid"
-                        alt="DIY Shutters">
+                <div class="col-8 text-center pl-0">
+                    <div class="shutter-image bg-light d-flex justify-content-center align-items-center">
+                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.32 PM.JPG" id="Cream"
+                            class="tabcontent default" alt="Shutter Image" class="img-fluid">
+                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.30 PM.JPG" id="Simply"
+                            class="tabcontent nodefault" alt="Shutter Image" class="img-fluid">
+                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.33 PM.JPG" id="Winter"
+                            class="tabcontent nodefault" alt="Shutter Image" class="img-fluid">
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h2>DIY Shutters</h2>
-                    <ul class="list-unstyled">
-                        <li>Available in one classic shutter style</li>
-                        <li>Resistant to heat and humidity—perfect for kitchens, bathrooms, and laundry rooms</li>
-                        <li>Durable polymer material won’t fade, warp, crack, or peel</li>
-                        <li>Streamlined options for easy decision making</li>
-                    </ul>
-
-                    <div class="color-options">
+                <div class="col-4">
+                    <div class="accordion mb-5" id="accordionExample">
                         <div class="">
-                            <p class="price">$141.00</p>
-                            <p>for 24" x 36"</p>
-                            <div class="d-flex flex-row bd-highlight mb-3">
-                                <img src="https://via.placeholder.com/100" class="radio-img-label mr-1" alt="Option 2">
-                                <img src="https://via.placeholder.com/100" class="radio-img-label mr-1" alt="Option 3">
-                                <img src="https://via.placeholder.com/100" class="radio-img-label mr-1" alt="Option 1">
-                                <img src="https://via.placeholder.com/100" class="radio-img-label mr-1" alt="Option 1">
-                                <img src="https://via.placeholder.com/100" class="radio-img-label mr-1" alt="Option 1">
-                                <span class="text-center text-muted">+36 more</span>
+                            <div class="product-info">
+                                <!-- Tên sản phẩm và đánh giá -->
+                                <h2 class="product-title">Zebra 5 inch</h2>
+                                <div class="rating-reviews">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="reviews">4.0 (11 reviews)</span>
+                                </div>
+
+                                <div class="price">
+                                    <h3>$ 80</h3>
+                                </div>
+
+                                <div class="color-selection">
+                                    <p class="mb-0">Color:</p>
+                                    <div class="color-options">
+                                        <ul class="d-flex flex-row bd-highlight mb-3" id="myUL">
+                                            <li class="color-option text-center" onmouseover="openCity(event, 'Cream')">
+                                                <label for="option1" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_051.jpg" alt="Option 1">
+                                                </label>
+                                            </li>
+                                            <li class="color-option text-center"
+                                                onmouseover="openCity(event, 'Simply')">
+                                                <label for="option2" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_729.jpg" alt="Option 2">
+                                                </label>
+                                            </li>
+                                            <li class="color-option text-center"
+                                                onmouseover="openCity(event, 'Winter')">
+                                                <label for="option3" class="radio-img-label">
+                                                    <img src="style/images/Color/S_15_922.jpg" alt="Option 3">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="window-size">
+                                    <label>Window Width (Inch):</label>
+                                    <div class="size-select">
+                                        <select class="mb-2">
+                                            <option>40</option>
+                                            <option>50</option>
+                                            <option>60</option>
+                                        </select>
+                                        <select class="mb-2">
+                                            <option>1/8</option>
+                                            <option>1/4</option>
+                                            <option>1/2</option>
+                                        </select>
+                                    </div>
+
+                                    <label>Window Height (Inch):</label>
+                                    <div class="size-select">
+                                        <select>
+                                            <option>50</option>
+                                            <option>60</option>
+                                            <option>70</option>
+                                        </select>
+                                        <select>
+                                            <option>1/4</option>
+                                            <option>1/2</option>
+                                            <option>3/4</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="buttons mt-3">
-                        <a class="btn btn-dark" href="product-customize-buy.html">Customize & Buy</a>
-                        <button class="btn btn-outline-secondary">Order Swatches</button>
+                    <div class="text-md-left">
+                        <a id="customizeBuyButton" class="btn btn-dark" href="product-customize-buy.html"
+                            disabled>Customize
+                            & Buy</a>
                     </div>
                 </div>
             </div>
-            </div>
         </section>
         <section id="product-features" class="container my-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>For a timeless look that’s perfect for any décor, choose Bali DIY shutters. Customizable light
-                        control, privacy, and size options perfectly fit your home and lifestyle. Our shutters are
-                        sturdy and welcoming—an ideal combination that’ll make them your favorite for years to come.</p>
+            <div class="container mt-4">
+                <!-- Tabs điều hướng -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab"
+                            aria-controls="about" aria-selected="true">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="details-tab" data-toggle="tab" href="#details" role="tab"
+                            aria-controls="details" aria-selected="false">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab"
+                            aria-controls="reviews" aria-selected="false">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="materials-tab" data-toggle="tab" href="#materials" role="tab"
+                            aria-controls="materials" aria-selected="false">Materials + Care</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab"
+                            aria-controls="shipping" aria-selected="false">Shipping & Received</a>
+                    </li>
+                </ul>
+
+                <!-- Nội dung tab -->
+                <div class="tab-content" id="myTabContent">
+                    <!-- Tab About -->
+                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                        <p>Combi shades consist of two layers of alternating slats which blend the functionality of
+                            roller blinds with horizontal blinds. They offer an excellent solution for controlling the
+                            amount of light that enters a room while maintaining privacy of the interior space.</p>
+                    </div>
+
+                    <!-- Tab Details -->
+                    <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
+                        <ul>
+                            <li>Composition: 100% Polyester</li>
+                            <li>Width: 280 cm</li>
+                            <li>Thickness: 0.52 mm ±5%</li>
+                            <li>Weight: 198g/sqm ±5%</li>
+                            <li>Repeat: Solid 75 mm Sheer 50mm</li>
+                            <li>Function: Dimout</li>
+                            <li>Origin: Korea</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab Reviews -->
+                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                        <p>Reviews content goes here...</p>
+                    </div>
+
+                    <!-- Tab Materials + Care -->
+                    <div class="tab-pane fade" id="materials" role="tabpanel" aria-labelledby="materials-tab">
+                        <p>Materials and care content goes here...</p>
+                    </div>
+
+                    <!-- Tab Shipping & Received -->
+                    <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                        <p>Shipping and received content goes here...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <h3>Reviews</h3>
+                <div class="row">
+                    <!-- Rating Snapshot -->
+                    <div class="col-md-6">
+                        <h5>Rating Snapshot</h5>
+                        <p>Select a row below to filter reviews.</p>
+                        <div class="rating-row">
+                            <span>5 stars</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>4369</span>
+                        </div>
+                        <div class="rating-row">
+                            <span>4 stars</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 10%;"
+                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>517</span>
+                        </div>
+                        <div class="rating-row">
+                            <span>3 stars</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 15%;"
+                                    aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>606</span>
+                        </div>
+                        <div class="rating-row">
+                            <span>2 stars</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 12%;"
+                                    aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>699</span>
+                        </div>
+                        <div class="rating-row">
+                            <span>1 star</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 20%;"
+                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>875</span>
+                        </div>
+                    </div>
+
+                    <!-- Overall Rating -->
+                    <div class="col-md-6 text-center">
+                        <h5>Overall Rating</h5>
+                        <div class="overall-rating">
+                            <h1>4.0</h1>
+                            <p class="stars">
+                                ★★★★☆
+                            </p>
+                            <p>7066 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommended-product">
+            <div class="container">
+                <h2 class="text-center mt-5 mb-4">RECOMMENDED PRODUCTS</h2>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="style/images/Zebra/Artboard 120@4x.jpg" class="card-img-top" alt="Wood Blind">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">3" Vane</h5>
+                                <p class="card-text font-weight-bolder">WOOD BLIND</p>
+                                <p class="card-text"><small class="text-muted">Starting <del>$150</del> $110 </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="style/images/Zebra/Artboard 13@4x.jpg" class="card-img-top" alt="Zebra Roman">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">3" VANE-2" SHEER</h5>
+                                <p class="card-text font-weight-bolder">THE ZEBRA ROMAN</p>
+                                <p class="card-text"><small class="text-muted">Starting <del>$110</del> $150 </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="style/images/Zebra/Artboard 13@4x.jpg" class="card-img-top" alt="Vertical Sheer">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">MAY 2025</h5>
+                                <p class="card-text font-weight-bolder">THE VERTICAL SHEER</p>
+                                <p class="card-text"><small class="text-muted">Starting <del>$110</del> $150 </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="style/images/Zebra/Artboard 169@4x.jpg" class="card-img-top" alt="Wood Blind">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">3" Vane</h5>
+                                <p class="card-text font-weight-bolder">WOOD BLIND</p>
+                                <p class="card-text"><small class="text-muted">Starting <del>$150</del> $110 </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="mt-3">
-        <h3 class="text-center bg-secondary">Footer</h3>
+    <footer class="mt-3" style="background-color: D9D9D9;">
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-4">
+                    <h4 class="text-uppercase">SUPPORT</h4>
+                    <p class="text-uppercase mb-0">REFUND & EXCHANGE</p>
+                    <p class="text-uppercase mb-0">WARRANTY</p>
+                    <p class="text-uppercase mb-0">HOW TO MEASURE</p>
+                    <p class="text-uppercase mb-0">HOW TO INSTALL</p>
+                </div>
+                <div class="col-4 connect">
+                    <h4 class="text-uppercase">CONNECT WITH US</h4>
+                    <a class="text-uppercase"><i class="fa-solid fa-camera-retro"></i></a>
+                    <a class="text-uppercase"><i class="fa-solid fa-phone"></i></a>
+                    <a class="text-uppercase"><i class="fa-brands fa-facebook-messenger"></i></a>
+                </div>
+                <div class="col-4">
+                    <h4 class="text-uppercase">SUBSCRIBE</h4>
+                    <p class="text-uppercase">Sign up for our newsletter to receive 10%​Off* on your first order & get
+                        updates on ​promotions, lifestyle guides, and more!</p>
+                    <div class="mt-5">
+                        <input type="text">
+                        <a href="" class="btn text-uppercase">Sing up</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -218,6 +468,22 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="style/slider/line/line.js"></script>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 
 </html>

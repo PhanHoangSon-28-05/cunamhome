@@ -331,13 +331,11 @@ footer .btn {
 
 /* End footer */
 
-
-
 /*Order shutters */
-#order-shutters h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+#order-shutters {
+    font-family: YACkoA9eHeY-0;
 }
+
 
 #order-shutters .card-header .show-img-text {
     width: 200px;
@@ -370,9 +368,11 @@ footer .btn {
 }
 
 #order-shutters .radio-img-label img {
-    max-width: 100px;
-    height: auto;
+    max-width: 30px;
+    height: 60px;
     display: block;
+    border-style: double;
+    border-color: #000;
 }
 
 #order-shutters .radio-img:checked+.radio-img-label {
@@ -383,6 +383,16 @@ footer .btn {
     margin: 0;
     font-size: 0.9rem;
     color: #333;
+}
+
+#order-shutters .color-options ul {
+    height: 70px;
+}
+
+#order-shutters .window-size .size-select select {
+    width: 40%;
+    height: 30px;
+    text-align: center;
 }
 
 #order-shutters .btn-secondary {
@@ -402,6 +412,76 @@ footer .btn {
 #order-shutters .btn[disabled] {
     cursor: not-allowed;
     opacity: 0.65;
+}
+
+#product-features {
+    font-family: YACkoA9eHeY-0;
+}
+
+#product-features .nav-tabs .nav-link {
+    color: #000;
+    font-size: 20px;
+    padding: 0px 50px;
+}
+
+#product-features .nav-tabs .nav-link.active {
+    color: #000;
+    border-style: outset;
+    background-color: #fff;
+    border-color: #ddd #ddd transparent;
+}
+
+#product-features .tab-pane {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+#product-features .rating-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#product-features .rating-row span:first-child {
+    width: 80px;
+}
+
+#product-features .progress {
+    width: 70%;
+    height: 10px;
+    margin: 0 10px;
+}
+
+#product-features .progress-bar {
+    background-color: #555;
+}
+
+#product-features .overall-rating h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#product-features .stars {
+    font-size: 24px;
+    color: #ffc107;
+}
+
+#product-features .overall-rating p {
+    margin: 0;
+}
+
+#recommended-product .card h5{
+    font-size: 12px;
+}
+
+#recommended-product .card:hover {
+    background-color: #ededed;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
 }
 
 /*End Order shutters */
