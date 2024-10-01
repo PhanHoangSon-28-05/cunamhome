@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style/css/font-face.css">
     <link rel="stylesheet" href="style/css/custom.css">
 
 
@@ -25,19 +26,19 @@
     <style>
         .default {
             float: left;
-            padding: 0px 12px;
-            border: 1px solid #ccc;
+            /* padding: 0px 12px; */
+            /* border: 1px solid #ccc; */
             border-left: none;
-            width: 750px;
+            width: 900px;
             height: auto;
         }
 
         .nodefault {
             float: left;
-            padding: 0px 12px;
-            border: 1px solid #ccc;
+            /* padding: 0px 12px; */
+            /* border: 1px solid #ccc; */
             border-left: none;
-            width: 750px;
+            width: 900px;
             height: auto;
             display: none;
         }
@@ -87,7 +88,7 @@
         </div>
         <div class="container-fluid ">
             <div class="row justify-content-center">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -155,7 +156,7 @@
         </div>
     </header>
     <main id="content-wrapper" class="main-v2">
-        <section id="order-shutters" class="container my-5">
+        <section id="order-shutters" class="container-fluid my-5">
             <div class="row">
                 <div class="col-8 text-center pl-0">
                     <div class="shutter-image bg-light d-flex justify-content-center align-items-center">
@@ -186,21 +187,25 @@
                                     <p class="mb-0">Color:</p>
                                     <div class="color-options">
                                         <ul class="d-flex flex-row bd-highlight mb-3" id="myUL">
-                                            <li class="color-option text-center" onmouseover="openCity(event, 'Cream')">
+                                            <li class="color-option text-center tablinks"
+                                                onmouseover="openCity(event, 'Cream')">
                                                 <label for="option1" class="radio-img-label">
-                                                    <img src="style/images/Color/S_15_051.jpg" alt="Option 1">
+                                                    <img src="style/images/Color/S_15_051.jpg" alt="Option 1"
+                                                        id="option1">
                                                 </label>
                                             </li>
-                                            <li class="color-option text-center"
+                                            <li class="color-option text-center tablinks"
                                                 onmouseover="openCity(event, 'Simply')">
                                                 <label for="option2" class="radio-img-label">
-                                                    <img src="style/images/Color/S_15_729.jpg" alt="Option 2">
+                                                    <img src="style/images/Color/S_15_729.jpg" alt="Option 2"
+                                                        id="option2">
                                                 </label>
                                             </li>
-                                            <li class="color-option text-center"
+                                            <li class="color-option text-center tablinks"
                                                 onmouseover="openCity(event, 'Winter')">
                                                 <label for="option3" class="radio-img-label">
-                                                    <img src="style/images/Color/S_15_922.jpg" alt="Option 3">
+                                                    <img src="style/images/Color/S_15_922.jpg" alt="Option 3"
+                                                        id="option3">
                                                 </label>
                                             </li>
                                         </ul>
@@ -239,14 +244,13 @@
                         </div>
                     </div>
                     <div class="text-md-left">
-                        <a id="customizeBuyButton" class="btn btn-dark" href="product-customize-buy.html"
-                            disabled>Customize
+                        <a id="customizeBuyButton" class="btn text-uppercase rounded-pill" href="product-customize-buy.html">Customize
                             & Buy</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="product-features" class="container my-5">
+        <section id="product-features" class="container-fluid my-5">
             <div class="container mt-4">
                 <!-- Tabs điều hướng -->
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -275,14 +279,16 @@
                 <!-- Nội dung tab -->
                 <div class="tab-content" id="myTabContent">
                     <!-- Tab About -->
-                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                    <div class="tab-pane fade bg-white border-0 show active" id="about" role="tabpanel"
+                        aria-labelledby="about-tab">
                         <p>Combi shades consist of two layers of alternating slats which blend the functionality of
                             roller blinds with horizontal blinds. They offer an excellent solution for controlling the
                             amount of light that enters a room while maintaining privacy of the interior space.</p>
                     </div>
 
                     <!-- Tab Details -->
-                    <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
+                    <div class="tab-pane fade bg-white border-0" id="details" role="tabpanel"
+                        aria-labelledby="details-tab">
                         <ul>
                             <li>Composition: 100% Polyester</li>
                             <li>Width: 280 cm</li>
@@ -295,87 +301,90 @@
                     </div>
 
                     <!-- Tab Reviews -->
-                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                        <p>Reviews content goes here...</p>
+                    <div class="tab-pane fade bg-white border-0" id="reviews" role="tabpanel"
+                        aria-labelledby="reviews-tab">
+                        <h3>Reviews</h3>
+                        <div class="row">
+                            <!-- Rating Snapshot -->
+                            <div class="col-md-6">
+                                <h5>Rating Snapshot</h5>
+                                <p>Select a row below to filter reviews.</p>
+                                <div class="rating-row">
+                                    <span>5 stars</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>4369</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span>4 stars</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 10%;"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>517</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span>3 stars</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 15%;"
+                                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>606</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span>2 stars</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 12%;"
+                                            aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>699</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span>1 star</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 20%;"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>875</span>
+                                </div>
+                            </div>
+
+                            <!-- Overall Rating -->
+                            <div class="col-md-6 text-center">
+                                <h5>Overall Rating</h5>
+                                <div class="overall-rating">
+                                    <h1>4.0</h1>
+                                    <p class="stars">
+                                        ★★★★☆
+                                    </p>
+                                    <p>7066 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Tab Materials + Care -->
-                    <div class="tab-pane fade" id="materials" role="tabpanel" aria-labelledby="materials-tab">
+                    <div class="tab-pane fade bg-white border-0" id="materials" role="tabpanel"
+                        aria-labelledby="materials-tab">
                         <p>Materials and care content goes here...</p>
                     </div>
 
                     <!-- Tab Shipping & Received -->
-                    <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                    <div class="tab-pane fade bg-white border-0" id="shipping" role="tabpanel"
+                        aria-labelledby="shipping-tab">
                         <p>Shipping and received content goes here...</p>
                     </div>
                 </div>
             </div>
 
             <div class="container mt-5">
-                <h3>Reviews</h3>
-                <div class="row">
-                    <!-- Rating Snapshot -->
-                    <div class="col-md-6">
-                        <h5>Rating Snapshot</h5>
-                        <p>Select a row below to filter reviews.</p>
-                        <div class="rating-row">
-                            <span>5 stars</span>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"
-                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span>4369</span>
-                        </div>
-                        <div class="rating-row">
-                            <span>4 stars</span>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 10%;"
-                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span>517</span>
-                        </div>
-                        <div class="rating-row">
-                            <span>3 stars</span>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 15%;"
-                                    aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span>606</span>
-                        </div>
-                        <div class="rating-row">
-                            <span>2 stars</span>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 12%;"
-                                    aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span>699</span>
-                        </div>
-                        <div class="rating-row">
-                            <span>1 star</span>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 20%;"
-                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span>875</span>
-                        </div>
-                    </div>
 
-                    <!-- Overall Rating -->
-                    <div class="col-md-6 text-center">
-                        <h5>Overall Rating</h5>
-                        <div class="overall-rating">
-                            <h1>4.0</h1>
-                            <p class="stars">
-                                ★★★★☆
-                            </p>
-                            <p>7066 Reviews</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <section id="recommended-product">
+        <section id="recommended-product" class="container-fluid my-5">
             <div class="container">
                 <h2 class="text-center mt-5 mb-4">RECOMMENDED PRODUCTS</h2>
 
@@ -472,17 +481,43 @@
     <script>
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
+            // Hide all tab contents
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
+            // Remove active class from all tab links
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
+            // Show the current tab content and add "active" class to the clicked tab
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
+
+            // Apply border to the selected option
+            applyBorder(evt.currentTarget);
         }
+        // Function to remove all borders
+        function removeAllBorders() {
+            const allOptions = document.querySelectorAll('.color-option img');
+            allOptions.forEach(option => {
+                option.style.border = 'double transparent';
+            });
+        }
+
+        // Function to apply border to the hovered or clicked option
+        function applyBorder(element) {
+            removeAllBorders(); // Remove borders from all options
+            const img = element.querySelector('img');
+            img.style.border = 'double black'; // Apply the double border style
+        }
+
+        // Ensure default tab content is displayed (e.g., Cream)
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("Cream").style.display = "block"; // Display default tab content
+            document.querySelector(".color-option:first-child img").style.border = 'double black'; // Set default border
+        });
     </script>
 </body>
 
