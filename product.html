@@ -98,7 +98,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
                                     data-toggle="dropdown" aria-expanded="false">
-                                    Shades
+                                    Shades <i class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Horizontal Sheer</a>
@@ -112,7 +112,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
                                     data-toggle="dropdown" aria-expanded="false">
-                                    BLINDS
+                                    BLINDS <i class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Wood</a>
@@ -122,7 +122,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
                                     data-toggle="dropdown" aria-expanded="false">
-                                    DRAPERY
+                                    DRAPERY <i class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Sheer</a>
@@ -133,7 +133,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
                                     data-toggle="dropdown" aria-expanded="false">
-                                    How to
+                                    How to <i class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu">
                                 </div>
@@ -141,7 +141,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
                                     data-toggle="dropdown" aria-expanded="false">
-                                    About us
+                                    About us <i class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Action</a>
@@ -244,7 +244,8 @@
                         </div>
                     </div>
                     <div class="text-md-left">
-                        <a id="customizeBuyButton" class="btn text-uppercase rounded-pill" href="product-customize-buy.html">Customize
+                        <a id="customizeBuyButton" class="btn text-uppercase rounded-pill"
+                            href="product-customize-buy.html">Customize
                             & Buy</a>
                     </div>
                 </div>
@@ -480,44 +481,25 @@
 
     <script>
         function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            // Hide all tab contents
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            // Remove active class from all tab links
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            // Show the current tab content and add "active" class to the clicked tab
+            // Ẩn tất cả các tab nội dung
+            document.querySelectorAll(".tabcontent").forEach(tab => tab.style.display = "none");
+
+            // Hiển thị tab nội dung đã chọn
             document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
 
-            // Apply border to the selected option
-            applyBorder(evt.currentTarget);
-        }
-        // Function to remove all borders
-        function removeAllBorders() {
-            const allOptions = document.querySelectorAll('.color-option img');
-            allOptions.forEach(option => {
-                option.style.border = 'double transparent';
-            });
+            // Xóa border của tất cả các lựa chọn màu
+            document.querySelectorAll(".color-option img").forEach(img => img.style.border = "double transparent");
+
+            // Thêm border vào ảnh đã chọn
+            evt.currentTarget.querySelector("img").style.border = "double black";
         }
 
-        // Function to apply border to the hovered or clicked option
-        function applyBorder(element) {
-            removeAllBorders(); // Remove borders from all options
-            const img = element.querySelector('img');
-            img.style.border = 'double black'; // Apply the double border style
-        }
-
-        // Ensure default tab content is displayed (e.g., Cream)
+        // Hiển thị nội dung mặc định khi tải trang
         document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("Cream").style.display = "block"; // Display default tab content
-            document.querySelector(".color-option:first-child img").style.border = 'double black'; // Set default border
+            document.getElementById("Cream").style.display = "block"; // Hiển thị tab mặc định
+            document.querySelector(".color-option img").style.border = "double black"; // Border mặc định
         });
+
     </script>
 </body>
 

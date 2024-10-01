@@ -39,10 +39,14 @@ ul {
 
 #header .navbar .navbar-nav .nav-link {
     font-family: YACkoA9eHeY-0;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
     font-size: 20px;
     color: #000;
+}
+
+#header .navbar .navbar-nav .dropdown-toggle::after {
+    content: none;
 }
 
 #header .navbar .navbar-nav .dropdown-item {
@@ -52,7 +56,15 @@ ul {
 
 @media (min-width: 768px) and (max-width: 1023px) {}
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    #header .navbar .navbar-nav .nav-link {
+        font-family: YACkoA9eHeY-0;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 20px;
+        color: #000;
+    }
+}
 
 /* Introduce */
 
