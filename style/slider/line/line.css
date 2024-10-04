@@ -1,7 +1,0 @@
-#slideshowLine a {
-    display: none;
-}
-
-#slideshowLine a.active {
-    display: inline-block;
-}

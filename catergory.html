@@ -21,25 +21,7 @@
     <script src="style/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
     <script src="style/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 
-    <link rel="stylesheet" href="style/slider/line/line.css">
-    <link rel="stylesheet" href="style/slider/header/slider.css">
-
-    <style>
-        .default {
-            float: left;
-            padding: 0px 12px;
-            border-left: none;
-            width: 700px;
-        }
-
-        .nodefault {
-            float: left;
-            padding: 0px 12px;
-            border-left: none;
-            display: none;
-            width: 700px;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="style/slider/line/line.css"> -->
 
 </head>
 
@@ -153,103 +135,72 @@
             </div>
         </div>
     </header>
-    <main id="content-wrapper" class="main-v2">
-        <section id="order-shutters" class="container-fluid my-5">
-            <div class="row pt-2">
-                <div class="col-md-6">
-                    <div class="accordion" id="accordionExample">
-                        <h2 class="product-title">Zebra 5 inch</h2>
-                        <div class="text-center">
-                            <p class="text-uppercase w-50 mx-auto">Configure Your Window Treatment</p>
-                        </div>
-                        <div class="mb-1">
-                            <div class="card rounded border-0">
-                                <div class="card-header bg-white border-dark" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left d-flex" type="button"
-                                            data-toggle="collapse" data-target="#collapseOne0" aria-expanded="true"
-                                            aria-controls="collapseOne0">
-                                            <span class="flex-grow-1 text-dark">Pick a color</span>
-                                            <div class="show-img-text d-flex">
-                                                <div id="selectedText0" class="text-show text-muted flex-grow-1">
-                                                </div>
-                                                <div class="">
-                                                    <img id="selectedImage0" src="" alt="Selected Image"
-                                                        class="img-show img-fluid ml-1">
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </h2>
+    <main id="content-wrapper" class="main-v2 text-body">
+        <section class="container-fluid" catergory.htmlid="product-catergory">
+            <div class="row content py-5c mb-3">
+                <div class="col-3"></div>
+                <div class="col-6 text-center">
+                    <p class="font-weight-bolder h3">Zebra Sheer Shades</p>
+                    <p class="">Zebra Roller Shades combine alternating sheer and solid bands in a single shade. Shift the solid
+                        bands to overlap, and you ensure privacy. Align the solid bands, and you get natural, diffused
+                        light. With each adjustment, you create your precise level of sun and privacy.
+                    </br>
+                    Comes standard with Metal Valance.</p>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="product">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="position-relative">
+                                <img src="style/images/Zebra/Artboard 169@4x.jpg" class="card-img-top img-fluid" alt="Light Filtering Zebra Shades">
+                                <div class="price-tag position-absolute">
+                                    From $272
                                 </div>
-
-                                <div id="collapseOne0" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <ul class="d-flex flex-row bd-highlight mb-3 mt-3" id="myUL">
-                                            <li class="color-option text-center" onmouseover="openCity(event, 'Cream')">
-                                                <input type="radio" id="option1" name="image-radio" class="radio-img"
-                                                    value="1"
-                                                    onclick="selectImage('style/images/Color/S_15_051.jpg','Simply Cream 2729','0')">
-                                                <label for="option1" class="radio-img-label">
-                                                    <img src="style/images/Color/S_15_051.jpg" alt="Option 1">
-                                                </label>
-                                            </li>
-                                            <li class="color-option text-center"
-                                                onmouseover="openCity(event, 'Simply')">
-                                                <input type="radio" id="option2" name="image-radio" class="radio-img"
-                                                    value="2"
-                                                    onclick="selectImage('style/images/Color/S_15_729.jpg','Simply Cream 2051','0')">
-                                                <label for="option2" class="radio-img-label">
-                                                    <img src="style/images/Color/S_15_729.jpg" alt="Option 2">
-                                                </label>
-                                            </li>
-                                            <li class="color-option text-center"
-                                                onmouseover="openCity(event, 'Winter')">
-                                                <input type="radio" id="option3" name="image-radio" class="radio-img"
-                                                    value="3"
-                                                    onclick="selectImage('style/images/Color/S_15_922.jpg','Simply Cream 2922', '0')">
-                                                <label for="option3" class="radio-img-label">
-                                                    <img src="style/images/Color/S_15_922.jpg" alt="Option 3">
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            </div>
+                            <!-- <div class="card-img-overlay justify-content-start p-0">
+                                <img src="" class="card-img-top img-fluid" alt="Light Filtering Zebra Shades">
+                                <span class="bg-white p-1 font-weight-bold" style="opacity: 0.8;">From $272</span>
+                            </div> -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title font-weight-bold">Light Filtering Zebra Shades</h5>
+                                <p class="card-text">Combine alternating sheer and solid fabric bands in a single Light Filtering Ze...</p>
+                                <a href="#" class="btn btn-dark">Customize Style</a>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-2 border-bottom border-dark mx-3">
-                        <div class="col-8">
-                            <p class="text-uppercase font-weight-bolder pl-5 h3">Total Price:</p>
-                        </div>
-                        <div class="col-4">
-                            <p class="mb-0 h2">$<span id="total"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-3">
-                        <div class="col-3 px-0 mx-0 size-select">
-                            <select class="w-100">
-                                <option>40</option>
-                                <option>50</option>
-                                <option>60</option>
-                            </select>
-                        </div>
-                        <div class="col-9 pr-0">
-                            <a id="customizeBuyButton" class="btn w-100 p-2" href="product-customize-buy.html"
-                                disabled>Add
-                                to bag</a>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="position-relative">
+                                <img src="style/images/Zebra/Artboard 22@4x(1).jpg" class="card-img-top img-fluid" alt="Light Filtering Zebra Shades">
+                                <div class="price-tag position-absolute">
+                                    From $272
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title font-weight-bold">Light Filtering Zebra Shades</h5>
+                                <p class="card-text">Combine alternating sheer and solid fabric bands in a single Light Filtering Ze...</p>
+                                <a href="#" class="btn btn-dark">Customize Style</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 text-center pl-0">
-                    <div class="shutter-image bg-light d-flex justify-content-center align-items-center">
-                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.32 PM.JPG" id="Cream"
-                            class="tabcontent default" alt="Shutter Image" class="img-fluid">
-                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.30 PM.JPG" id="Simply"
-                            class="tabcontent nodefault" alt="Shutter Image" class="img-fluid">
-                        <img src="style/images/Horizontal Sheer/Image 4-16-24 at 3.33 PM.JPG" id="Winter"
-                            class="tabcontent nodefault" alt="Shutter Image" class="img-fluid">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="position-relative">
+                                <img src="style/images/Zebra/Artboard 18@4x.jpg" class="card-img-top img-fluid" alt="Light Filtering Zebra Shades">
+                                <div class="price-tag position-absolute">
+                                    From $272
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title font-weight-bold">Light Filtering Zebra Shades</h5>
+                                <p class="card-text">Combine alternating sheer and solid fabric bands in a single Light Filtering Ze...</p>
+                                <a href="#" class="btn btn-dark">Customize Style</a>
+                            </div>
+                        </div>
                     </div>
+                                                            
                 </div>
             </div>
         </section>
@@ -289,73 +240,12 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="style/slider/line/line.js"></script>
     <script src="style/js/custom.js"></script>
 
     <script>
-        const radioButtons = document.querySelectorAll('input[name="image-radio"]');
-        const customizeBuyButton = document.getElementById('customizeBuyButton');
-
-        radioButtons.forEach(radio => {
-            radio.addEventListener('change', () => {
-                if (document.querySelector('input[name="image-radio"]:checked')) {
-                    customizeBuyButton.removeAttribute('disabled');
-                }
-            });
-        });
-
-        customizeBuyButton.addEventListener('click', function (event) {
-            if (!document.querySelector('input[name="image-radio"]:checked')) {
-                event.preventDefault();
-            }
-        });
-    </script>
-    <script>
-        function selectImage(imageSrc, text, idSuffix) {
-            document.getElementById('selectedImage' + idSuffix).src = imageSrc;
-            document.getElementById('selectedImage' + idSuffix).style.display = 'inline';
-
-            document.getElementById('selectedText' + idSuffix).innerHTML = text;
-            document.getElementById('selectedText' + idSuffix).style.display = 'block';
-
-            $('#collapseOne' + idSuffix).collapse('hide');
-
-            calculateTotal();
+        function changeImage(imageId, newImageSrc) {
+            document.getElementById(imageId).src = newImageSrc;
         }
-
-        function calculateTotal() {
-            var total = 0;
-            var numbers = document.querySelectorAll('.number');
-
-            numbers.forEach(function (span) {
-                total += parseInt(span.innerText);
-            });
-
-            document.getElementById('total').innerText = total;
-        }
-
-        window.onload = calculateTotal;
-    </script>
-    <script>
-        function openCity(evt, cityName) {
-            // Ẩn tất cả các tab nội dung
-            document.querySelectorAll(".tabcontent").forEach(tab => tab.style.display = "none");
-
-            // Hiển thị tab nội dung đã chọn
-            document.getElementById(cityName).style.display = "block";
-
-            // Xóa border của tất cả các lựa chọn màu
-            document.querySelectorAll(".color-option img").forEach(img => img.style.border = "double transparent");
-
-            // Thêm border vào ảnh đã chọn
-            evt.currentTarget.querySelector("img").style.border = "double black";
-        }
-
-        // Hiển thị nội dung mặc định khi tải trang
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("Cream").style.display = "block"; // Hiển thị tab mặc định
-            document.querySelector(".color-option img").style.border = "double black"; // Border mặc định
-        });
 
     </script>
 </body>
