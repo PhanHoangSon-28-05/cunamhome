@@ -556,8 +556,14 @@ footer .btn {
 /* End Product catergory */
 
 /* Cart */
-#cart {
+/* #cart {
     font-family: YACkoA9eHeY-0;
+} */
+
+#cart select {
+    width: 50px;
+    height: auto;
+    font-size: 17px;
 }
 
 #cart .font-weight-bold {
@@ -568,8 +574,5 @@ footer .btn {
     color: #dc3545;
 }
 
-#cart .border-bottom {
-    border-bottom: 1px solid #000;
-}
 
 /* End Cart */
