@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 767px) {
-    * {
-        overflow-x: auto;
-    }
-}
+@media (max-width: 767px) {}
 
 body {
     font-family: sans-serif;
@@ -19,6 +15,7 @@ body {
 ul {
     list-style: none;
 }
+
 
 #header .line {
     background-color: rgb(0, 0, 0);
@@ -35,6 +32,19 @@ ul {
     font-size: 65px;
     margin-left: -34px;
     margin-bottom: 0px;
+}
+
+#header .name-logo .name .text-2 {
+    font-family: YAFcfpZDFTo-0;
+    margin-left: -20px;
+}
+
+#header .name-logo .rounded-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #8A8911;
+    position: relative;
+    top: -50px;
 }
 
 #header .navbar .navbar-nav .nav-link {
@@ -61,6 +71,39 @@ ul {
 @media (min-width: 768px) and (max-width: 1023px) {}
 
 @media (max-width: 767px) {
+
+    #header .line p {
+        font-size: 10px;
+    }
+
+    #header .name-logo .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    #header .name-logo .name {
+        font-size: 40px;
+        margin-left: -25px;
+        margin-bottom: 0px;
+    }
+
+    #header .name-logo .name .text-2 {
+        margin-left: -10px;
+    }
+
+    #header .name-logo .rounded-circle {
+        top: -30px;
+    }
+
+    #header .name-logo .icon a {
+        font-size: 20px;
+        margin-top: -40px;
+    }
+
+    #header .navbar .navbar-toggler {
+        float: left;
+    }
+
     #header .navbar .navbar-nav .nav-link {
         font-family: YACkoA9eHeY-0;
         margin-left: 30px;
@@ -81,11 +124,12 @@ ul {
 #introduction-section h3 {
     font-size: 2rem;
     font-weight: bold;
+    margin-top: 60px;
 }
 
 #introduction-section p {
     font-size: 1.2rem;
-    margin: 20px 0;
+    margin-top: 48px;
 }
 
 #introduction-section .btn {
@@ -94,6 +138,7 @@ ul {
     border: none;
     padding: 10px 20px;
     font-size: 1.2rem;
+    margin-top: 60px;
 }
 
 #introduction-section button:hover {
@@ -104,9 +149,44 @@ ul {
 
 @media (max-width: 767px) {
 
+    #introduction-section {
+        padding: 20px 20px;
+    }
+
     #introduction-section .image-right .w-50 {
         width: 200px;
     }
+
+    #introduction-section h3 {
+        font-size: 1.2rem;
+        margin-top: 40px;
+    }
+
+    #introduction-section p {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    #introduction-section h3 {
+        font-size: 0.85rem;
+        margin-top: 10px;
+    }
+
+    #introduction-section p {
+        font-size: 0.5rem;
+        margin: 5px 0;
+    }
+
+    #introduction-section .btn {
+        font-size: 0.75rem;
+        margin-top: 10px;
+        padding: 5px 5px;
+    }
+
 }
 
 /* End Introduce */
@@ -226,6 +306,22 @@ ul {
     transition: all 0.3s ease;
 }
 
+@media (max-width: 767px) {
+    .process-work .step-row .col-md-4 {
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    .process-work h5 {
+        font-size: 20px;
+    }
+
+    .process-work .card p {
+        font-size: 15px;
+    }
+}
+
 
 /* End Process work */
 
@@ -250,6 +346,28 @@ ul {
     border: none;
     padding: 10px 20px;
     font-size: 1.2rem;
+}
+
+#committed .custom-title {
+    font-size: 3rem;
+}
+
+@media (max-width: 576px) {
+    #committed .custom-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #committed .content {
+        width: auto;
+        height: auto;
+    }
+
+    #committed .image {
+        width: 100px;
+        height: 130px;
+    }
+
 }
 
 /* End Committed */
@@ -297,6 +415,28 @@ ul {
 
 #appointment .send {
     width: 550px;
+}
+
+@media (max-width: 576px) {
+
+    #appointment h3,
+    #appointment p {
+        width: auto;
+    }
+
+    #appointment img {
+        height: auto;
+    }
+
+    #appointment .input input {
+        width: 345px;
+        height: 50px;
+    }
+
+    #appointment .btn {
+        width: auto;
+    }
+
 }
 
 /* End appointment */
@@ -354,6 +494,19 @@ footer .btn {
     font-size: 1.0rem;
 }
 
+@media (max-width: 576px) {
+
+    footer input {
+        width: 200px;
+    }
+
+    footer .btn {
+        width: 100px;
+        padding: 10px 10px;
+    }
+
+}
+
 /* End footer */
 
 /*Order shutters */
@@ -366,11 +519,6 @@ footer .btn {
     color: #ffffff;
 }
 
-
-#order-shutters .size-select select {
-    height: 40px;
-    text-align: center;
-}
 
 #order-shutters .card-header .show-img-text {
     width: 200px;
@@ -427,6 +575,10 @@ footer .btn {
     width: 40%;
     height: 30px;
     text-align: center;
+    border: #000000;
+    border-radius: 5px;
+    height: 40px;
+    color: #000;
 }
 
 #order-shutters .btn-secondary {
@@ -447,6 +599,23 @@ footer .btn {
     cursor: not-allowed;
     opacity: 0.65;
 }
+
+#order-shutters .default {
+    float: left;
+    border-left: none;
+    width: 700px;
+    height: auto;
+}
+
+#order-shutters .nodefault {
+    float: left;
+    border-left: none;
+    width: 700px;
+    height: auto;
+    display: none;
+}
+
+
 
 #product-features {
     font-family: YACkoA9eHeY-0;
@@ -518,6 +687,47 @@ footer .btn {
     transition: all 0.3s ease;
 }
 
+#order-shutters .size-select select {
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    border: #000000;
+    border-radius: 5px;
+    height: 40px;
+    color: #000;
+}
+
+@media (max-width: 767px) {
+
+    #order-shutters .default {
+        width: 300px;
+    }
+
+    #order-shutters .nodefault {
+        width: 300px;
+    }
+
+    #order-shutters .size-select select {
+        width: 40%;
+        height: 40px;
+    }
+
+    #product-features .nav-tabs .nav-link {
+        color: #000;
+        font-size: 16px;
+        padding: 0px 5px;
+    }
+
+    #product-features .nav-tabs .nav-link.active {
+
+        background-color: #8A8911;
+        padding: 2px 0px;
+        border-color: #8A8911 #8A8911 transparent;
+    }
+
+
+}
+
 /*End Order shutters */
 
 /* Product catergory */
@@ -556,9 +766,9 @@ footer .btn {
 /* End Product catergory */
 
 /* Cart */
-/* #cart {
+#cart {
     font-family: YACkoA9eHeY-0;
-} */
+}
 
 #cart select {
     width: 50px;
