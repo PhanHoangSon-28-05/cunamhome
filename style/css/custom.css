@@ -776,6 +776,7 @@ footer .btn {
     font-size: 17px;
 }
 
+
 #cart .font-weight-bold {
     font-weight: bold;
 }
@@ -784,5 +785,15 @@ footer .btn {
     color: #dc3545;
 }
 
+@media (max-width: 767px) {
+    #cart select {
+        width: 50px;
+        font-size: 17px;
+        border: #000000;
+        border-radius: 5px;
+        height: 40px;
+        color: #000;
+    }
+}
 
 /* End Cart */
