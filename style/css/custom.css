@@ -275,6 +275,7 @@ ul {
     .products .card img {
         height: 300px;
     }
+    
 }
 
 /* End Product */
@@ -432,9 +433,12 @@ ul {
         width: 345px;
         height: 50px;
     }
-
+    #appointment .send {
+        width: auto;
+    }
     #appointment .btn {
         width: auto;
+        margin-top: 20px;
     }
 
 }

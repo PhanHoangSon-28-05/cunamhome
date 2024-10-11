@@ -4,3 +4,4 @@ $('.nav-item').hover(function () {
 }, function () {
     $(this).find('.dropdown-menu').stop(true, true).fadeOut();
 });
+
