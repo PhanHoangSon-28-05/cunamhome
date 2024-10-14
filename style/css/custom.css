@@ -1,3 +1,30 @@
+.bs-canvas-overlay {
+    opacity: 0.85;
+    z-index: 1100;
+}
+
+.bs-canvas {
+    top: 0;
+    z-index: 1110;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 330px;
+    transition: margin .4s ease-out;
+    -webkit-transition: margin .4s ease-out;
+    -moz-transition: margin .4s ease-out;
+    -ms-transition: margin .4s ease-out;
+}
+
+.bs-canvas-left {
+    left: 0;
+    margin-left: -330px;
+}
+
+.bs-canvas-right {
+    right: 0;
+    margin-right: -330px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +37,7 @@ body {
     font-family: sans-serif;
     background-color: white;
     color: #333;
+    min-height: 100vh;
 }
 
 ul {
@@ -59,7 +87,15 @@ ul {
     margin-left: 60px;
 }
 
-#header .navbar .navbar-nav .dropdown-toggle::after {
+#header .navbar .navbar-nav .custom-dropdown {
+    position: absolute;
+    left: 0;
+    width: auto;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#header .dropdown-toggle::after {
     content: none;
 }
 
@@ -98,18 +134,6 @@ ul {
     #header .name-logo .icon a {
         font-size: 20px;
         margin-top: -40px;
-    }
-
-    #header .navbar .navbar-toggler {
-        float: left;
-    }
-
-    #header .navbar .navbar-nav .nav-link {
-        font-family: YACkoA9eHeY-0;
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 20px;
-        color: #000;
     }
 }
 
@@ -275,7 +299,61 @@ ul {
     .products .card img {
         height: 300px;
     }
-    
+
+    .products .color-dot {
+        width: 24px;
+        height: 24px;
+        margin: 0 2px;
+    }
+
+    .products .flipster__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 30px;
+        height: 50px;
+        /* background-color: #00f; */
+        /* Màu xanh cho mũi tên */
+        color: #000000;
+        /* border-radius: 50%;
+        border: none; */
+        cursor: pointer;
+        opacity: 2;
+    }
+
+    .products .flipster__button--prev {
+        left: -25px;
+        /* Đặt bên trái */
+    }
+
+    .products .flipster__button--next {
+        right: -25px;
+        /* Đặt bên phải */
+    }
+
+    /* .products .products .flipster__nav {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .products .flipster__nav__item {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        background-color: #000;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 0;
+    }
+
+    .products .flipster__nav__item:hover,
+    .products .flipster__nav__item--current {
+        background-color: #444;
+    } */
 }
 
 /* End Product */
@@ -433,9 +511,11 @@ ul {
         width: 345px;
         height: 50px;
     }
+
     #appointment .send {
         width: auto;
     }
+
     #appointment .btn {
         width: auto;
         margin-top: 20px;
