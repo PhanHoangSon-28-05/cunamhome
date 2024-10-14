@@ -799,14 +799,7 @@ footer .btn {
     #product-features .nav-tabs .nav-link {
         color: #000;
         font-size: 16px;
-        padding: 0px 5px;
-    }
-
-    #product-features .nav-tabs .nav-link.active {
-
-        background-color: #8A8911;
-        padding: 2px 0px;
-        border-color: #8A8911 #8A8911 transparent;
+        padding: 5px 5px;
     }
 
 
