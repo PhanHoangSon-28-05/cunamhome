@@ -113,13 +113,13 @@ ul {
     }
 
     #header .name-logo .logo {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
     }
 
     #header .name-logo .name {
-        font-size: 40px;
-        margin-left: -25px;
+        font-size: 30px;
+        margin-left: -20px;
         margin-bottom: 0px;
     }
 
@@ -133,7 +133,13 @@ ul {
 
     #header .name-logo .icon a {
         font-size: 20px;
-        margin-top: -40px;
+        margin-top: -34px;
+    }
+
+
+    #header .name-logo .rounded-circle {
+        width: 10px;
+        height: 10px;
     }
 }
 
@@ -385,19 +391,37 @@ ul {
     transition: all 0.3s ease;
 }
 
+#steps {
+    height: 300px;
+}
+
 @media (max-width: 767px) {
-    .process-work .step-row .col-md-4 {
+    /* .process-work .step-row .col-md-4 {
         padding-right: 0px;
         padding-left: 0px;
         padding-top: 20px;
+    } */
+
+    .process-work .step-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 6px;
     }
 
     .process-work h5 {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .process-work .card p {
-        font-size: 15px;
+        font-size: 10px;
+    }
+
+    .process-work .card p {
+        font-size: 10px;
+    }
+
+    #steps {
+        height: auto;
     }
 }
 
